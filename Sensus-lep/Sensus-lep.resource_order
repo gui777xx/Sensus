@@ -19,11 +19,11 @@
   "ResourceOrderSettings":[
     {"name":"rato_giratorio","order":3,"path":"sprites/rato_giratorio/rato_giratorio.yy",},
     {"name":"rato_movimento_direita","order":1,"path":"sprites/rato_movimento_direita/rato_movimento_direita.yy",},
+    {"name":"rato_movimento_esquerda","order":8,"path":"sprites/rato_movimento_esquerda/rato_movimento_esquerda.yy",},
     {"name":"rato_movimento_frente","order":2,"path":"sprites/rato_movimento_frente/rato_movimento_frente.yy",},
     {"name":"rato_parado_costa","order":4,"path":"sprites/rato_parado_costa/rato_parado_costa.yy",},
     {"name":"rato_parado_direita","order":5,"path":"sprites/rato_parado_direita/rato_parado_direita.yy",},
     {"name":"rato_parado_esquerda","order":6,"path":"sprites/rato_parado_esquerda/rato_parado_esquerda.yy",},
     {"name":"rato_parado_frente","order":7,"path":"sprites/rato_parado_frente/rato_parado_frente.yy",},
-    {"name":"Sprite9","order":8,"path":"sprites/Sprite9/Sprite9.yy",},
   ],
 }
