@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"Tile_Parede_2",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":40,
+    "SerialiseWidth":34,
+    "TileCompressedData":[
+      -708,0,6,14,15,16,17,18,19,-28,0,6,21,22,23,24,25,26,-28,0,6,28,29,30,31,32,33,-415,0,6,14,15,16,17,
+      18,19,-28,0,7,21,22,23,24,24,26,27,-27,0,7,28,29,30,31,32,33,34,-27,0,7,28,29,30,31,32,33,34,-31,0,3,
+      6,40,41,-20,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"Tile_Parede_2",
+  "out_columns":7,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Parede_Labirinto_2",
+    "path":"sprites/Parede_Labirinto_2/Parede_Labirinto_2.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":9,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":9,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":49,
+}
