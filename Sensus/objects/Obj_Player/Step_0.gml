@@ -56,3 +56,33 @@ else
 {
 	sprite_index=Player_parado_gambiarra
 }
+// BLOQUEIA TUDO SE ESTIVER CAINDO
+if (estado == "caindo") {
+    tempo_queda += 1;
+
+    y += 2; // jogador afunda
+    image_angle += 10; // gira
+    image_xscale *= 0.95;
+    image_yscale *= 0.95;
+
+    if (image_yscale < 0.1 || tempo_queda > 30) {
+        if (vai_teleportar) {
+            var destino = instance_nearest(x, y, casa_do_Lep)
+
+            if (instance_exists(destino)) {
+                x = destino.x;
+                y = destino.y;
+            }
+
+            // Reset visual e estado
+            image_xscale = 1;
+            image_yscale = 1;
+            image_angle = 0;
+
+            estado = "andando";
+            vai_teleportar = false;
+        }
+    }
+
+    exit; // Impede o restante do código
+}

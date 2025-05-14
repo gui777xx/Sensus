@@ -40,18 +40,19 @@ y += vsp;
 // Troca de sprites conforme a direção
 if (dir == 1) {
     sprite_index = rato_movimento_costa;
-    image_speed = 0.8;
+    image_speed = 1;
 } else if (dir == 2) {
     sprite_index = rato_movimento_frente;
-    image_speed = 0.8;
+    image_speed = 1;
 } else if (dir == 3) {
     sprite_index = rato_movimento_esquerda;
-    image_speed = 0.8;
+    image_speed = 1;
 } else if (dir == 4) {
     sprite_index = rato_movimento_direita;
-    image_speed = 0.8;
-} else {
-    image_speed = 0; // parado
+    image_speed = 1;
+} else if (dir == 0){
+	sprite_index = rato_parado_frente;
+    image_speed = 0.2; // parado
 }
 
 if (!place_meeting(x, y + vsp,  [Tile, Colisor, Colisivo])) {
