@@ -40,7 +40,6 @@
     {"name":"inst_777681BD","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_38F350E1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7D6360B1","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_7C7EB245","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
