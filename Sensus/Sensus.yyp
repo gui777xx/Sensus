@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Sensus",
   "resources":[
@@ -52,6 +52,7 @@
     {"id":{"name":"cen_intro","path":"rooms/cen_intro/cen_intro.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"Sequence1","path":"sequences/Sequence1/Sequence1.yy",},},
     {"id":{"name":"Barril","path":"sprites/Barril/Barril.yy",},},
     {"id":{"name":"Borda_Labirinto","path":"sprites/Borda_Labirinto/Borda_Labirinto.yy",},},
     {"id":{"name":"Buraco_Labirinto","path":"sprites/Buraco_Labirinto/Buraco_Labirinto.yy",},},
