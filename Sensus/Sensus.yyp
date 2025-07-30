@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Sensus",
   "resources":[
@@ -45,6 +45,7 @@
     {"id":{"name":"Obj_intro","path":"objects/Obj_intro/Obj_intro.yy",},},
     {"id":{"name":"Obj_Lep","path":"objects/Obj_Lep/Obj_Lep.yy",},},
     {"id":{"name":"Obj_Olho","path":"objects/Obj_Olho/Obj_Olho.yy",},},
+    {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Tocha_2","path":"objects/Obj_Tocha_2/Obj_Tocha_2.yy",},},
     {"id":{"name":"Obj_Tocha","path":"objects/Obj_Tocha/Obj_Tocha.yy",},},
@@ -63,6 +64,7 @@
     {"id":{"name":"Cogumelo_vermelho","path":"sprites/Cogumelo_vermelho/Cogumelo_vermelho.yy",},},
     {"id":{"name":"Detalhes_Labirinto","path":"sprites/Detalhes_Labirinto/Detalhes_Labirinto.yy",},},
     {"id":{"name":"Em_cima_labirinto","path":"sprites/Em_cima_labirinto/Em_cima_labirinto.yy",},},
+    {"id":{"name":"inimigo_1","path":"sprites/inimigo_1/inimigo_1.yy",},},
     {"id":{"name":"Olho_1","path":"sprites/Olho_1/Olho_1.yy",},},
     {"id":{"name":"Parede_Labirinto_1","path":"sprites/Parede_Labirinto_1/Parede_Labirinto_1.yy",},},
     {"id":{"name":"Parede_Labirinto_2","path":"sprites/Parede_Labirinto_2/Parede_Labirinto_2.yy",},},
