@@ -87,6 +87,7 @@
     {"id":{"name":"rato_parado_frente","path":"sprites/rato_parado_frente/rato_parado_frente.yy",},},
     {"id":{"name":"S_Colisor","path":"sprites/S_Colisor/S_Colisor.yy",},},
     {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},},
+    {"id":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},},
     {"id":{"name":"Terra_Labirinto","path":"sprites/Terra_Labirinto/Terra_Labirinto.yy",},},
     {"id":{"name":"Teste_Cenario_1","path":"sprites/Teste_Cenario_1/Teste_Cenario_1.yy",},},
     {"id":{"name":"Tocha_parede_2","path":"sprites/Tocha_parede_2/Tocha_parede_2.yy",},},
