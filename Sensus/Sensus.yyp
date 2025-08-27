@@ -66,6 +66,7 @@
     {"id":{"name":"Detalhes_Labirinto","path":"sprites/Detalhes_Labirinto/Detalhes_Labirinto.yy",},},
     {"id":{"name":"Em_cima_labirinto","path":"sprites/Em_cima_labirinto/Em_cima_labirinto.yy",},},
     {"id":{"name":"inimigo_1","path":"sprites/inimigo_1/inimigo_1.yy",},},
+    {"id":{"name":"lesma","path":"sprites/lesma/lesma.yy",},},
     {"id":{"name":"Olho_1","path":"sprites/Olho_1/Olho_1.yy",},},
     {"id":{"name":"Parede_Labirinto_1","path":"sprites/Parede_Labirinto_1/Parede_Labirinto_1.yy",},},
     {"id":{"name":"Parede_Labirinto_2","path":"sprites/Parede_Labirinto_2/Parede_Labirinto_2.yy",},},
