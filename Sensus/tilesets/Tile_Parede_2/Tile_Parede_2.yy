@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Parede_Labirinto_2",
-    "path":"sprites/Parede_Labirinto_2/Parede_Labirinto_2.yy",
+    "name":"Parede_labirinto_2",
+    "path":"sprites/Parede_labirinto_2/Parede_labirinto_2.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

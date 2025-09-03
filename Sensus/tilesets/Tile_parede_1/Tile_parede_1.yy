@@ -22,8 +22,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Parede_Labirinto_1",
-    "path":"sprites/Parede_Labirinto_1/Parede_Labirinto_1.yy",
+    "name":"Parede_labirinto_1",
+    "path":"sprites/Parede_labirinto_1/Parede_labirinto_1.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

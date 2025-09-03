@@ -1,1 +1,0 @@
-alarme[0] = 120; // Espera 2 segundos (ajuste se quiser mais tempo)

@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Sprites_cenário",
+    "path":"folders/Sprites_cenário.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

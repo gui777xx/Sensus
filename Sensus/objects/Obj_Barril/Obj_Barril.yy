@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Barril",
-  "eventList":[],
+  "%Name":"obj_barril",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_Barril",
+  "name":"obj_barril",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"Colisor",
-    "path":"objects/Colisor/Colisor.yy",
+    "name":"colisor",
+    "path":"objects/colisor/colisor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

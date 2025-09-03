@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Tocha_2",
+  "%Name":"obj_tocha_2",
   "eventList":[],
   "managed":true,
-  "name":"Obj_Tocha_2",
+  "name":"obj_tocha_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Olho",
+  "%Name":"obj_olho",
   "eventList":[],
   "managed":true,
-  "name":"Obj_Olho",
+  "name":"obj_olho",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

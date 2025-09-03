@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Detalhes_Labirinto",
-    "path":"sprites/Detalhes_Labirinto/Detalhes_Labirinto.yy",
+    "name":"Detalhes_labirinto",
+    "path":"sprites/Detalhes_labirinto/Detalhes_labirinto.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

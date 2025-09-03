@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_True_Buraco",
+  "%Name":"obj_true_buraco",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_True_Buraco",
+  "name":"obj_true_buraco",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

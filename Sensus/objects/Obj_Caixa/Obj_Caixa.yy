@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Caixa",
-  "eventList":[],
+  "%Name":"obj_caixa",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Obj_Caixa",
+  "name":"obj_caixa",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"Colisor",
-    "path":"objects/Colisor/Colisor.yy",
+    "name":"colisor",
+    "path":"objects/colisor/colisor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

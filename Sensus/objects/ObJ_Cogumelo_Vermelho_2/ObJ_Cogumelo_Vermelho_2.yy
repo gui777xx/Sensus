@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"ObJ_Cogumelo_Vermelho_2",
+  "%Name":"obJ_cogumelo_vermelho_2",
   "eventList":[],
   "managed":true,
-  "name":"ObJ_Cogumelo_Vermelho_2",
+  "name":"obJ_cogumelo_vermelho_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

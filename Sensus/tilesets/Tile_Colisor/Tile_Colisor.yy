@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"S_Colisor",
-    "path":"sprites/S_Colisor/S_Colisor.yy",
+    "name":"S_colisor",
+    "path":"sprites/S_colisor/S_colisor.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Cogumelo_Roxo",
-    "path":"sprites/Cogumelo_Roxo/Cogumelo_Roxo.yy",
+    "name":"Cogumelo_roxo",
+    "path":"sprites/Cogumelo_roxo/Cogumelo_roxo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Borda_Labirinto",
-    "path":"sprites/Borda_Labirinto/Borda_Labirinto.yy",
+    "name":"Borda_labirinto",
+    "path":"sprites/Borda_labirinto/Borda_labirinto.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
