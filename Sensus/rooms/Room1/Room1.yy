@@ -94,6 +94,7 @@
     {"name":"inst_63136872","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6114DC02","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6FEA2EEC","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_695A6385","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -146,6 +147,7 @@
         {"$GMRInstance":"v2","%Name":"inst_3FE11F82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3FE11F82","objectId":{"name":"obj_segredo","path":"objects/obj_segredo/obj_segredo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":225.5,"y":78.0,},
         {"$GMRInstance":"v2","%Name":"inst_66B797E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66B797E8","objectId":{"name":"obj_hitbox_frente","path":"objects/obj_hitbox_frente/obj_hitbox_frente.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":249.0,"y":131.0,},
         {"$GMRInstance":"v2","%Name":"inst_45503567","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45503567","objectId":{"name":"obj_mira","path":"objects/obj_mira/obj_mira.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":122.0,"y":107.5,},
+        {"$GMRInstance":"v2","%Name":"inst_695A6385","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_695A6385","objectId":{"name":"obj_escorpiao","path":"objects/obj_escorpiao/obj_escorpiao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":256.0,},
       ],"layers":[],"name":"Ins_Entidades","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Parede_Cantos","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Parede_Cantos","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":78,"TileCompressedData":[
           -8,-2147483648,-5,0,-69,-2147483648,-6,0,-3,-2147483648,-2,0,2,-2147483648,0,-63,-2147483648,-4,0,-4,
