@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Grama_chacoalhando",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":6,
   "bbox_left":1,
   "bbox_right":8,
   "bbox_top":1,

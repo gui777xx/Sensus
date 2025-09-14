@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Grama",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":6,
   "bbox_left":2,
   "bbox_right":7,
   "bbox_top":1,

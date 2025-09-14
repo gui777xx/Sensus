@@ -8,8 +8,8 @@
   "name":"obj_caixa_quebrando_carvao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos_cenário",
+    "path":"folders/Objetos_cenário.yy",
   },
   "parentObjectId":null,
   "persistent":false,

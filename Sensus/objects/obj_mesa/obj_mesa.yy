@@ -8,8 +8,8 @@
   "name":"obj_mesa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos_cenário",
+    "path":"folders/Objetos_cenário.yy",
   },
   "parentObjectId":{
     "name":"colisor",

@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":5,
+  "height":4,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f1844279-9bbf-409b-8cd8-4ff6ed9a84cb","blendMode":0,"displayName":"default","isLocked":false,"name":"f1844279-9bbf-409b-8cd8-4ff6ed9a84cb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Sprites_cenário",
+    "path":"folders/Sprites_cenário.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -63,7 +63,7 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
-    "seqHeight":5.0,
+    "seqHeight":4.0,
     "seqWidth":4.0,
     "showBackdrop":true,
     "showBackdropImage":false,

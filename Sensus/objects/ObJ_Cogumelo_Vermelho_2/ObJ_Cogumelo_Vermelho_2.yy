@@ -6,8 +6,8 @@
   "name":"obJ_cogumelo_vermelho_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos_cenário",
+    "path":"folders/Objetos_cenário.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Cogumelo_vermelho_2",
-    "path":"sprites/Cogumelo_vermelho_2/Cogumelo_vermelho_2.yy",
+    "name":"Cogumelo_vermelho",
+    "path":"sprites/Cogumelo_vermelho/Cogumelo_vermelho.yy",
   },
   "spriteMaskId":null,
   "visible":true,
