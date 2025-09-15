@@ -113,6 +113,8 @@
     {"name":"inst_62C8B07","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4D78CCCE","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1B391331","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_6A0AA728","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_7D542C0F","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -188,7 +190,7 @@
           0,5,-2147483648,0,-2147483648,38,28,-10,-2147483648,-10,0,-10,-2147483648,1,0,-15,-2147483648,4,0,-2147483648,
           0,19,-26,-2147483648,3,0,38,32,-10,0,11,29,43,44,45,47,43,44,45,45,43,28,-7,0,2,-2147483648,0,-15,-2147483648,
           4,0,-2147483648,0,26,-26,-2147483648,-2,0,12,38,43,36,45,44,28,0,0,29,46,44,40,-3,0,-4,-2147483648,-2,
-          0,10,9,43,44,45,43,44,45,43,44,28,-4,0,-11,-2147483648,4,0,-2147483648,29,40,-27,-2147483648,2,0,-2147483648,
+          0,10,38,43,44,45,43,44,45,43,44,28,-4,0,-11,-2147483648,4,0,-2147483648,29,40,-27,-2147483648,2,0,-2147483648,
           -4,0,4,17,0,0,12,-4,0,-7,-2147483648,-9,0,7,-2147483648,38,43,44,45,46,28,-10,-2147483648,3,0,-2147483648,
           33,-33,-2147483648,5,0,24,-2147483648,0,19,-26,-2147483648,2,38,28,-8,-2147483648,4,0,29,45,40,-33,-2147483648,
           -2,0,3,-2147483648,0,0,-27,-2147483648,11,38,43,44,45,43,44,43,44,45,44,40,-30,-2147483648,1,14,-4,-2147483648,
@@ -289,6 +291,8 @@
         {"$GMRInstance":"v2","%Name":"inst_62C8B07","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62C8B07","objectId":{"name":"obj_lamparina_mesa","path":"objects/obj_lamparina_mesa/obj_lamparina_mesa.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":185.0,"y":237.0,},
         {"$GMRInstance":"v2","%Name":"inst_1B391331","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B391331","objectId":{"name":"obj_pergaminho","path":"objects/obj_pergaminho/obj_pergaminho.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":173.0,"y":234.0,},
         {"$GMRInstance":"v2","%Name":"inst_4D78CCCE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D78CCCE","objectId":{"name":"Object40","path":"objects/Object40/Object40.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":114.0,"y":63.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6A0AA728","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A0AA728","objectId":{"name":"obj_cristal","path":"objects/obj_cristal/obj_cristal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":205.0,"y":140.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7D542C0F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D542C0F","objectId":{"name":"obj_fogueira","path":"objects/obj_fogueira/obj_fogueira.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":162.0,"y":213.0,},
       ],"layers":[],"name":"Ins_Cenario","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Detalhes","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Detalhes","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":78,"TileCompressedData":[
           -321,-2147483648,5,5,6,-2147483648,4,4,-6,-2147483648,5,6,4,-2147483648,1,2,-62,-2147483648,16,12,13,
