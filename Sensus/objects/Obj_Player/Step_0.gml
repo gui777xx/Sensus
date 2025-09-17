@@ -1,3 +1,5 @@
+// Ajustando a Profuundidade
+
 // Inicializa variáveis de colisão frontal
 if (!variable_instance_exists(id, "colide_cima")) {
     colide_cima   = false;
