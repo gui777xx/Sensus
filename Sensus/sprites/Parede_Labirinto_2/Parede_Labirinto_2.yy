@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Parede_labirinto_2",
   "bboxMode":0,
-  "bbox_bottom":56,
+  "bbox_bottom":62,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,
