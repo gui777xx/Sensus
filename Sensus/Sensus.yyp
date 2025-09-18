@@ -69,7 +69,7 @@
     {"id":{"name":"obj_grama","path":"objects/obj_grama/obj_grama.yy",},},
     {"id":{"name":"obj_hitbox_frente","path":"objects/obj_hitbox_frente/obj_hitbox_frente.yy",},},
     {"id":{"name":"obj_inimigo_escorpiao","path":"objects/obj_inimigo_escorpiao/obj_inimigo_escorpiao.yy",},},
-    {"id":{"name":"obj_inimiog_pai","path":"objects/obj_inimiog_pai/obj_inimiog_pai.yy",},},
+    {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_lamparina_mesa","path":"objects/obj_lamparina_mesa/obj_lamparina_mesa.yy",},},
     {"id":{"name":"obj_lamparina","path":"objects/obj_lamparina/obj_lamparina.yy",},},
     {"id":{"name":"obj_mesa","path":"objects/obj_mesa/obj_mesa.yy",},},

@@ -1,5 +1,16 @@
+//Timer para mudar de estado
+tempo_estado = game_get_speed(gamespeed_fps) * 15 ;
+timer_estado = tempo_estado;
+
+destino_x = 0;
+destino_y = 0;
+
+
 // Inherit the parent event
 event_inherited();
+
+//estado de perseguição ao player(talvez seja particular talvez todos tenham)
+estado_persegue = new estado()
 
 #region estado_parado
 
@@ -9,11 +20,23 @@ estado_parado.inicia = function()
 	sprite_index = escopiao_parado;
 	//iniciar a animação do começo
 	image_index = 0;
+	
+	//retanndo o timer do estado 
+	timer_estado = tempo_estado;
 }
 
-estado_parado.roda() = function()
+estado_parado.roda = function()
 {
-
+	//diminuindo o timer do estado
+	timer_estado--;
+	
+	var _tempo = irandom(timer_estado);
+	
+	if(_tempo <= tempo_estado * .01)
+	{
+		var _estado_novo = choose(estado_parado, estado_andando, estado_andando)
+		troca_estado(_estado_novo)
+	}
 }
 
 #endregion
@@ -24,10 +47,34 @@ estado_andando.inicia = function()
 {
 	sprite_index = escopiao_andando
 	image_index = 0;
+	
+	//retanndo o timer do estado 
+	timer_estado = tempo_estado;
+	
+	//escolhendo um local no mapa e indo até lá
+	
+	
+	//escolhendo um local no mapa aleatoriamente
+	destino_x = irandom(room_width);
+	destino_y = irandom(room_height);
+	
 }
 
 estado_andando.roda = function()
 {
+	//diminuindo o timer do estado
+	timer_estado--;
+	
+	var _tempo = irandom(timer_estado);
+	
+	if(_tempo <= 5)
+	{
+		var _estado_novo = choose(estado_parado, estado_andando)
+		troca_estado(_estado_novo)
+	}
+	
+	//indo até o destino enquanto desvio dos colisores
+	mp_potential_step_object(destino_x, destino_y, 1, colisor)
 	
 }
 
@@ -39,13 +86,31 @@ estado_dano.inicia = function()
 {
 	sprite_index = escopiao_dano_frente;
 	image_index = 0;
+	
+	//perco vida
+	vida--
 }
 
 estado_dano.roda = function()
 {
 	
+	
+	
+	//saindo do estado de dano
+	//se ainda tiver vida vai para o estado parado
+	if (image_index >= image_number - .5)
+	{
+		if (vida > 0)
+		{
+			alvo = obj_player; 
+			troca_estado(estado_persegue);
+		}
+		else // Não tenho vida, vou jogar no vasco!
+		{
+			troca_estado(estado_morrendo);
+		}
+	}
 }
-
 #endregion
 
 #region estado_morrendo 
@@ -58,10 +123,43 @@ estado_morrendo.inicia = function()
 
 estado_morrendo.roda = function()
 {
+	//morte
 	
+	if (image_index >= image_number - .5)
+	{
+		instance_destroy();
+	}
 }
 
 #endregion
 
+
+#region estado_persegue 
+estado_persegue.inicia = function()
+{
+	sprite_index = escopiao_andando;
+	image_index  = 0;
+	
+	image_blend = c_fuchsia;
+
+}
+
+estado_persegue.roda = function()
+{
+	//Se o alvo não existe mais, fico parado
+	if (!instance_exists(obj_player))
+		{
+			alvo = noone;
+			troca_estado(estado_parado)
+		}
+	//Definindo o Player como alvo
+	//seguindo o alvo
+	mp_potential_step_object(alvo.x, alvo.y, 1, colisor);
+	
+}
+
+
+
+#endregion
 //iniciando o estado com as modificações
 inicia_estado(estado_parado)
