@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"Larva_enrrolada",
-  "bboxMode":0,
-  "bbox_bottom":7,
+  "bboxMode":2,
+  "bbox_bottom":6,
   "bbox_left":3,
   "bbox_right":6,
   "bbox_top":3,
