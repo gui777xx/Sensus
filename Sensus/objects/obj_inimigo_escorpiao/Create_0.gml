@@ -23,6 +23,8 @@ estado_parado.inicia = function()
 	
 	//retanndo o timer do estado 
 	timer_estado = tempo_estado;
+	
+	image_blend = c_white
 }
 
 estado_parado.roda = function()
@@ -156,8 +158,65 @@ estado_persegue.roda = function()
 	//seguindo o alvo
 	mp_potential_step_object(alvo.x, alvo.y, 1, colisor);
 	
+	//Atacando o Player!!!
+	//checando a distância para o  player
+	var _dist = point_distance(x, y, alvo.x, alvo.y);
+	
+	if (_dist <= 10)
+	{
+		troca_estado(estado_atacando);
+	}
+	
+	//cahamando outros inimigos para atacar
+	var _n = instance_number(object_index);
+	
+	for (var i = 0; i < _n; i++)
+	{
+		//checando se eu não estou olhando pra mim mesmo
+		var _escorpiao = instance_find(object_index, i);
+		show_debug_message("kkkkkkkkk");
+		if (_escorpiao == id)
+		{
+			//não faça nada porque sou eu 
+		}
+		else
+		{
+			//tenho que checar se ese cara ainda não está perseguindo o player
+			if(_escorpiao.alvo != alvo)
+			{
+				
+				//checando a distância desse inimigo
+				var _dist = point_distance(x,y, _escorpiao.x, _escorpiao.y);
+				if (_dist < 300)
+				{
+				//pedindo ajuda
+				with(_escorpiao)
+				{
+					troca_estado(estado_persegue);
+				}
+			}
+		}
+	}
+}
+	
+	show_debug_message(_n)
+	
 }
 
+#region estado_atacando6
+estado_atacando.inicia = function()
+{
+	sprite_index = escopiao_ataque_1;
+	image_index  = 0;
+}
+estado_atacando.roda = function()
+{
+	//saindo do estado de ataque 
+	if (image_index >= image_number - .5)
+	{
+		troca_estado(estado_parado);
+	}
+}
 
 
 #endregion
