@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lamparina",
+  "%Name":"obj_hitbox_inimigos",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lamparina",
+  "name":"obj_hitbox_inimigos",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos_cenário",
-    "path":"folders/Objetos_cenário.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"colisor",
-    "path":"objects/colisor/colisor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Lamparina",
-    "path":"sprites/Lamparina/Lamparina.yy",
+    "name":"Hitbox_inimigos",
+    "path":"sprites/Hitbox_inimigos/Hitbox_inimigos.yy",
   },
   "spriteMaskId":null,
   "visible":true,
