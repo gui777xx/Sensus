@@ -5,3 +5,6 @@ distancia_ativacao = 40;
 contador_passos = 0;
 intervalo_passos = 5;
 alpha_morte = 1; // controle de transparência
+
+ tiles     = layer_tilemap_get_id("Tiles_Parede_Cantos");
+ colisivo = layer_tilemap_get_id("Tiles_Colisor");
