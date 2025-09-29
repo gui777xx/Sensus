@@ -34,6 +34,9 @@
     "name":"Slash",
     "path":"sprites/Slash/Slash.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Slash_hitbox",
+    "path":"sprites/Slash_hitbox/Slash_hitbox.yy",
+  },
   "visible":true,
 }

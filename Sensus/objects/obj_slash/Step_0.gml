@@ -10,8 +10,10 @@ if (!sprite_definido) {
         (angulo_mouse >= 90 && angulo_mouse < 145)         // diagonal leve cima
     ) {
         sprite_index = Slash;
+		mask_index = Slash_hitbox;
     } else {
         sprite_index = Slash_2;
+		mask_index = Slash_2_hitbox
     }
 
     sprite_definido = true; // trava o sprite

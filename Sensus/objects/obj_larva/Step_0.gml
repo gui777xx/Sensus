@@ -44,7 +44,7 @@ else if (larva_estado == "seguindo") {
         var new_y = y + lengthdir_y(velocidade, dir);
 
         // Verifica colisão com tiles ou objetos colisor
-        if (!place_meeting(new_x, new_y, colisor) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+        if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
             x = new_x;
             y = new_y;
         } else {
@@ -59,7 +59,7 @@ else if (larva_estado == "seguindo") {
                 desvio_angulo = dir + angulos_desvio[i];
                 new_x = x + lengthdir_x(velocidade, desvio_angulo);
                 new_y = y + lengthdir_y(velocidade, desvio_angulo);
-                if (!place_meeting(new_x, new_y, colisor) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+                if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
                     x = new_x;
                     y = new_y;
                     tentou_andar = true;
