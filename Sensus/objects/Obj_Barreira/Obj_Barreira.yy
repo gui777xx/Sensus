@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Barreira",
-    "path":"sprites/Barreira/Barreira.yy",
+    "name":"Barreira_esquerda",
+    "path":"sprites/Barreira_esquerda/Barreira_esquerda.yy",
   },
   "spriteMaskId":null,
   "visible":true,
