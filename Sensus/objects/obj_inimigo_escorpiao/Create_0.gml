@@ -76,7 +76,40 @@ estado_andando.roda = function()
 	}
 	
 	//indo até o destino enquanto desvio dos colisores
-	mp_potential_step_object(destino_x, destino_y, 1, colisor)
+	            var dir = point_direction(x, y, destino_x, destino_y);
+            var velocidade = 1; // Velocidade de movimento
+            var new_x = x + lengthdir_x(velocidade, dir);
+            var new_y = y + lengthdir_y(velocidade, dir);
+
+            // Verifica colisão com tiles ou objetos colisor
+            if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+                x = new_x;
+                y = new_y;
+            } else {
+                // Se tem colisão, tenta desviar
+
+                // Tenta ângulos alternativos para desviar: 30°, -30°, 60°, -60°, 90°, -90°
+                var desvio_angulo;
+                var tentou_andar = false;
+                var angulos_desvio = [30, -30, 60, -60, 90, -90];
+
+                for (var i = 0; i < array_length(angulos_desvio); i++) {
+                    desvio_angulo = dir + angulos_desvio[i];
+                    new_x = x + lengthdir_x(velocidade, desvio_angulo);
+                    new_y = y + lengthdir_y(velocidade, desvio_angulo);
+                    if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+                        x = new_x;
+                        y = new_y;
+                        tentou_andar = true;
+                        break;
+                    }
+                }
+
+                // Se não conseguiu desviar, não anda
+                if (!tentou_andar) {
+                    // opcional: fica parado ou tenta outra lógica
+                }
+            }
 	
 }
 
@@ -156,7 +189,40 @@ estado_persegue.roda = function()
 		}
 	//Definindo o Player como alvo
 	//seguindo o alvo
-	mp_potential_step_object(alvo.x, alvo.y, 1, colisor);
+	            var dir = point_direction(x, y, alvo.x, alvo.y);
+            var velocidade = 1; // Velocidade de movimento
+            var new_x = x + lengthdir_x(velocidade, dir);
+            var new_y = y + lengthdir_y(velocidade, dir);
+
+            // Verifica colisão com tiles ou objetos colisor
+            if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+                x = new_x;
+                y = new_y;
+            } else {
+                // Se tem colisão, tenta desviar
+
+                // Tenta ângulos alternativos para desviar: 30°, -30°, 60°, -60°, 90°, -90°
+                var desvio_angulo;
+                var tentou_andar = false;
+                var angulos_desvio = [30, -30, 60, -60, 90, -90];
+
+                for (var i = 0; i < array_length(angulos_desvio); i++) {
+                    desvio_angulo = dir + angulos_desvio[i];
+                    new_x = x + lengthdir_x(velocidade, desvio_angulo);
+                    new_y = y + lengthdir_y(velocidade, desvio_angulo);
+                    if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+                        x = new_x;
+                        y = new_y;
+                        tentou_andar = true;
+                        break;
+                    }
+                }
+
+                // Se não conseguiu desviar, não anda
+                if (!tentou_andar) {
+                    // opcional: fica parado ou tenta outra lógica
+                }
+            }
 	
 	//Atacando o Player!!!
 	//checando a distância para o  player
@@ -181,13 +247,13 @@ estado_persegue.roda = function()
 		}
 		else
 		{
-			//tenho que checar se ese cara ainda não está perseguindo o player
+			//tenho que checar se eSse cara ainda não está perseguindo o player
 			if(_escorpiao.alvo != alvo)
 			{
-				
+
 				//checando a distância desse inimigo
 				var _dist = point_distance(x,y, _escorpiao.x, _escorpiao.y);
-				if (_dist < 300)
+				if (_dist < 80)
 				{
 				//pedindo ajuda
 				with(_escorpiao)
@@ -217,7 +283,6 @@ estado_atacando.roda = function()
 		troca_estado(estado_parado);
 	}
 }
-
 
 #endregion
 //iniciando o estado com as modificações

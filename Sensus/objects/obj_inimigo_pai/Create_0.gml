@@ -10,3 +10,5 @@ estado_atacando		= new estado();
 
 //iniciando o estado parado por padrão 
 inicia_estado(estado_parado);
+ tiles     = layer_tilemap_get_id("Tiles_Parede_Cantos");
+ colisivo = layer_tilemap_get_id("Tiles_Colisor");
