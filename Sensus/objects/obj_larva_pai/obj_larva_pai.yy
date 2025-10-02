@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barreira_esquerda",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_larva_pai",
+  "eventList":[],
   "managed":true,
-  "name":"obj_barreira_esquerda",
+  "name":"obj_larva_pai",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"colisor",
-    "path":"objects/colisor/colisor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Barreira_direita",
-    "path":"sprites/Barreira_direita/Barreira_direita.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

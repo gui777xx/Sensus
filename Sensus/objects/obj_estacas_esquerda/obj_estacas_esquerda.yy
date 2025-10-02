@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_estacas",
+  "%Name":"obj_estacas_esquerda",
   "eventList":[],
   "managed":true,
-  "name":"obj_estacas",
+  "name":"obj_estacas_esquerda",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

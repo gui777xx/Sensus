@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Barreira",
+  "%Name":"obj_barreira",
   "eventList":[],
   "managed":true,
-  "name":"Obj_Barreira",
+  "name":"obj_barreira",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",

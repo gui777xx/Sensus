@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barreira_esquerda",
+  "%Name":"obj_controlador_porta",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_barreira_esquerda",
+  "name":"obj_controlador_porta",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"colisor",
-    "path":"objects/colisor/colisor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Barreira_direita",
-    "path":"sprites/Barreira_direita/Barreira_direita.yy",
+    "name":"Sprite_controlador_porta",
+    "path":"sprites/Sprite_controlador_porta/Sprite_controlador_porta.yy",
   },
   "spriteMaskId":null,
   "visible":true,
