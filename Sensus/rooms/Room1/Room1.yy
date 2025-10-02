@@ -119,6 +119,7 @@
     {"name":"inst_1CE278C9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2324937B","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1BBAA2BA","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_6C94EA72","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
