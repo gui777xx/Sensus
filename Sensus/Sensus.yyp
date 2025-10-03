@@ -208,6 +208,7 @@
     {"id":{"name":"Teste_cenario_1","path":"sprites/Teste_cenario_1/Teste_cenario_1.yy",},},
     {"id":{"name":"Tocha_parede_2","path":"sprites/Tocha_parede_2/Tocha_parede_2.yy",},},
     {"id":{"name":"Tocha_parede","path":"sprites/Tocha_parede/Tocha_parede.yy",},},
+    {"id":{"name":"Vazio","path":"sprites/Vazio/Vazio.yy",},},
     {"id":{"name":"Tile_Borda","path":"tilesets/Tile_Borda/Tile_Borda.yy",},},
     {"id":{"name":"Tile_Cima","path":"tilesets/Tile_Cima/Tile_Cima.yy",},},
     {"id":{"name":"Tile_Colisor","path":"tilesets/Tile_Colisor/Tile_Colisor.yy",},},

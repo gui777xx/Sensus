@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"Estacas_frente",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":21,
   "bbox_left":1,
   "bbox_right":16,

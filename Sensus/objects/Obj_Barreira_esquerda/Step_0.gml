@@ -8,7 +8,7 @@ if (place_meeting(x, y, obj_controlador)) {
         if (controlador.porta_fechada == false && instance_number(obj_larva_pai) == 0) {
             
             // Salva posição e camada
-            var x_pos = x;
+            var x_pos = x + 3;
             var y_pos = y;
             var layer_pos = layer;
 

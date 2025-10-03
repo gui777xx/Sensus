@@ -9,7 +9,7 @@ if place_meeting(x, y, obj_slash)
 
 if (larva_estado == "morrendo") { // Espera a animação terminar 
 	if (image_index >= image_number - 1)
-	{ image_speed = 0 alpha_morte -= 0.02;
+	{ image_speed = 0 alpha_morte -= 0.05;
 		// diminui a transparência
 		image_alpha = alpha_morte;
 		if (alpha_morte <= 0.05) 
