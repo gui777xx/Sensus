@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object40",
+  "%Name":"obj_cogumelo_duplo",
   "eventList":[],
   "managed":true,
-  "name":"Object40",
+  "name":"obj_cogumelo_duplo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos_cenário",

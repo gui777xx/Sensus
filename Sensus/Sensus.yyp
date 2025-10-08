@@ -57,6 +57,7 @@
     {"id":{"name":"obj_caixa_quebrando_carvao","path":"objects/obj_caixa_quebrando_carvao/obj_caixa_quebrando_carvao.yy",},},
     {"id":{"name":"obj_caixa_quebrando","path":"objects/obj_caixa_quebrando/obj_caixa_quebrando.yy",},},
     {"id":{"name":"obj_caixa","path":"objects/obj_caixa/obj_caixa.yy",},},
+    {"id":{"name":"obj_cogumelo_duplo","path":"objects/obj_cogumelo_duplo/obj_cogumelo_duplo.yy",},},
     {"id":{"name":"obj_cogumelo_marrom_2","path":"objects/obj_cogumelo_marrom_2/obj_cogumelo_marrom_2.yy",},},
     {"id":{"name":"Obj_Cogumelo_Roxo","path":"objects/Obj_Cogumelo_Roxo/Obj_Cogumelo_Roxo.yy",},},
     {"id":{"name":"obJ_cogumelo_vermelho_2","path":"objects/obJ_cogumelo_vermelho_2/obJ_cogumelo_vermelho_2.yy",},},
@@ -97,8 +98,8 @@
     {"id":{"name":"obj_tocha_2","path":"objects/obj_tocha_2/obj_tocha_2.yy",},},
     {"id":{"name":"obj_tocha","path":"objects/obj_tocha/obj_tocha.yy",},},
     {"id":{"name":"obj_true_buraco","path":"objects/obj_true_buraco/obj_true_buraco.yy",},},
-    {"id":{"name":"Object40","path":"objects/Object40/Object40.yy",},},
     {"id":{"name":"vergonha_da_profision","path":"objects/vergonha_da_profision/vergonha_da_profision.yy",},},
+    {"id":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
@@ -222,6 +223,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
