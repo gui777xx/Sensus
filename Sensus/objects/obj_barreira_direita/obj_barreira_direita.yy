@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_estacas_esquerda",
+  "%Name":"obj_barreira_direita",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_estacas_esquerda",
+  "name":"obj_barreira_direita",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Estacas_esquerda",
-    "path":"sprites/Estacas_esquerda/Estacas_esquerda.yy",
+    "name":"Barreira_direita",
+    "path":"sprites/Barreira_direita/Barreira_direita.yy",
   },
   "spriteMaskId":null,
   "visible":true,

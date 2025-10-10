@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Barreira_direita",
-    "path":"sprites/Barreira_direita/Barreira_direita.yy",
+    "name":"Barreira_esquerda",
+    "path":"sprites/Barreira_esquerda/Barreira_esquerda.yy",
   },
   "spriteMaskId":null,
   "visible":true,

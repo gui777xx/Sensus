@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barreira",
-  "eventList":[],
+  "%Name":"obj_barreira_quebrando_direita",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_barreira",
+  "name":"obj_barreira_quebrando_direita",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Barreira_esquerda",
-    "path":"sprites/Barreira_esquerda/Barreira_esquerda.yy",
+    "name":"Barreira_quebrando_direita",
+    "path":"sprites/Barreira_quebrando_direita/Barreira_quebrando_direita.yy",
   },
   "spriteMaskId":null,
   "visible":true,
