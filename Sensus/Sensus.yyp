@@ -46,6 +46,8 @@
     {"id":{"name":"obj_armadilha","path":"objects/obj_armadilha/obj_armadilha.yy",},},
     {"id":{"name":"obj_barreira_direita","path":"objects/obj_barreira_direita/obj_barreira_direita.yy",},},
     {"id":{"name":"obj_barreira_esquerda","path":"objects/obj_barreira_esquerda/obj_barreira_esquerda.yy",},},
+    {"id":{"name":"obj_barreira_frente_quebrando","path":"objects/obj_barreira_frente_quebrando/obj_barreira_frente_quebrando.yy",},},
+    {"id":{"name":"obj_barreira_frente","path":"objects/obj_barreira_frente/obj_barreira_frente.yy",},},
     {"id":{"name":"obj_barreira_quebrando_direita","path":"objects/obj_barreira_quebrando_direita/obj_barreira_quebrando_direita.yy",},},
     {"id":{"name":"obj_barreira_quebrando_esquerda","path":"objects/obj_barreira_quebrando_esquerda/obj_barreira_quebrando_esquerda.yy",},},
     {"id":{"name":"obj_barril_cristal","path":"objects/obj_barril_cristal/obj_barril_cristal.yy",},},
