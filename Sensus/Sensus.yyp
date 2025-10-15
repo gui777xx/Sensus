@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inimigos","folderPath":"folders/Sprites/Inimigos.yy","name":"Inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Escorpião","folderPath":"folders/Sprites/Inimigos/Escorpião.yy","name":"Escorpião","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Besouro","folderPath":"folders/Sprites/Inimigos/Besouro.yy","name":"Besouro","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Larva","folderPath":"folders/Sprites/Inimigos/Larva.yy","name":"Larva","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player","folderPath":"folders/Sprites/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Splash_Screen","folderPath":"folders/Sprites/Splash_Screen.yy","name":"Splash_Screen","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -38,7 +39,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Sensus",
   "resources":[
@@ -121,8 +122,8 @@
     {"id":{"name":"Barril_quebrando_pedras","path":"sprites/Barril_quebrando_pedras/Barril_quebrando_pedras.yy",},},
     {"id":{"name":"Barril_quebrando","path":"sprites/Barril_quebrando/Barril_quebrando.yy",},},
     {"id":{"name":"Barril","path":"sprites/Barril/Barril.yy",},},
-    {"id":{"name":"besouro_teste","path":"sprites/besouro_teste/besouro_teste.yy",},},
-    {"id":{"name":"besouro","path":"sprites/besouro/besouro.yy",},},
+    {"id":{"name":"besouro_andando","path":"sprites/besouro_andando/besouro_andando.yy",},},
+    {"id":{"name":"besouro_parado","path":"sprites/besouro_parado/besouro_parado.yy",},},
     {"id":{"name":"Borda_labirinto","path":"sprites/Borda_labirinto/Borda_labirinto.yy",},},
     {"id":{"name":"Buraco","path":"sprites/Buraco/Buraco.yy",},},
     {"id":{"name":"Caixa_carvao","path":"sprites/Caixa_carvao/Caixa_carvao.yy",},},
