@@ -20,6 +20,7 @@
   "height":1080,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"5c24e4bb-c241-4da1-babb-e2d14be13930","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5c24e4bb-c241-4da1-babb-e2d14be13930","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"c42366c7-fe45-47ed-ad0f-fb098405868c","blendMode":0,"displayName":"default","isLocked":false,"name":"c42366c7-fe45-47ed-ad0f-fb098405868c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Sprite112",
