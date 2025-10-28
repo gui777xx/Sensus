@@ -16,6 +16,7 @@
     {"$GMSpriteFrame":"","%Name":"ded12067-ebdc-445b-b97e-c7cb23d509f7","name":"ded12067-ebdc-445b-b97e-c7cb23d509f7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e5e9d3c2-f3fd-43cd-a7ef-c485d14e20e7","name":"e5e9d3c2-f3fd-43cd-a7ef-c485d14e20e7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"eec84b3c-52e9-458e-bb38-35bde7fb509f","name":"eec84b3c-52e9-458e-bb38-35bde7fb509f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2da6aad2-a731-406b-bb9f-5647bd1d529c","name":"2da6aad2-a731-406b-bb9f-5647bd1d529c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"85c2d6f9-ce8f-4aca-8c70-c10c9ab6967b","name":"85c2d6f9-ce8f-4aca-8c70-c10c9ab6967b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -53,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":5.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -87,8 +88,11 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eec84b3c-52e9-458e-bb38-35bde7fb509f","path":"sprites/besouro_ataque/besouro_ataque.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e9f2b85a-bc6f-471f-ae5d-9109b485e9dc","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2da6aad2-a731-406b-bb9f-5647bd1d529c","path":"sprites/besouro_ataque/besouro_ataque.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ec93560c-43b1-43d5-b1c9-e9904e1753b1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"85c2d6f9-ce8f-4aca-8c70-c10c9ab6967b","path":"sprites/besouro_ataque/besouro_ataque.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"76888942-3037-4302-885d-241664357dc4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"76888942-3037-4302-885d-241664357dc4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
