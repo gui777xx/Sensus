@@ -106,6 +106,7 @@
     {"id":{"name":"vergonha_da_profision","path":"objects/vergonha_da_profision/vergonha_da_profision.yy",},},
     {"id":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"Armadilha_sombreada","path":"sprites/Armadilha_sombreada/Armadilha_sombreada.yy",},},
@@ -233,6 +234,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
