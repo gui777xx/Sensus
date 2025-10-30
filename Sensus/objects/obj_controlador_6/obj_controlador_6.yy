@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_controlador",
+  "%Name":"obj_controlador_6",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_controlador",
+  "name":"obj_controlador_6",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_controlador_pai",
+    "path":"objects/obj_controlador_pai/obj_controlador_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
