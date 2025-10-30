@@ -5,12 +5,7 @@
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
-  "instanceCreationOrder":[
-    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
-  ],
+  "instanceCreationOrder":[],
   "isDnd":false,
   "layers":[
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":6.0,"animationSpeedType":0,"colour":4294967295,"depth":0,"effectEnabled":false,"effectType":"_filter_screenshake","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[

@@ -1,8 +1,8 @@
 // Verifica se está encostando no controlador
-if (place_meeting(x, y, obj_controlador)) {
+if (place_meeting(x, y, obj_controlador_pai)) {
     
     // Acessa o controlador e verifica se todos os inimigos foram eliminados
-    var controlador = instance_place(x, y, obj_controlador);
+    var controlador = instance_place(x, y, obj_controlador_pai);
     
     if (controlador != noone) {
         if (controlador.porta_fechada == false && instance_number(obj_larva_pai) == 0) {
