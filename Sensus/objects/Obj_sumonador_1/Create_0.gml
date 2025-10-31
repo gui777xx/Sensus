@@ -1,1 +1,0 @@
-inimigos_summonados = false;
