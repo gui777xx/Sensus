@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Barril_quebrando_cristal",
   "bboxMode":2,
   "bbox_bottom":13,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"819c1a9d-58bf-4a92-879c-c030b143a935","name":"819c1a9d-58bf-4a92-879c-c030b143a935","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"769024c1-135e-4d4f-a19b-e839062a83bc","name":"769024c1-135e-4d4f-a19b-e839062a83bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b25f9e38-6c40-4b03-8461-92679a171ac2","name":"b25f9e38-6c40-4b03-8461-92679a171ac2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"95b5978a-28ce-47e8-9895-130dc132bef3","name":"95b5978a-28ce-47e8-9895-130dc132bef3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"80c72458-af90-42c5-b8e4-25c61ac180a0","name":"80c72458-af90-42c5-b8e4-25c61ac180a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"819c1a9d-58bf-4a92-879c-c030b143a935","name":"819c1a9d-58bf-4a92-879c-c030b143a935","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"769024c1-135e-4d4f-a19b-e839062a83bc","name":"769024c1-135e-4d4f-a19b-e839062a83bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b25f9e38-6c40-4b03-8461-92679a171ac2","name":"b25f9e38-6c40-4b03-8461-92679a171ac2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"95b5978a-28ce-47e8-9895-130dc132bef3","name":"95b5978a-28ce-47e8-9895-130dc132bef3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"80c72458-af90-42c5-b8e4-25c61ac180a0","name":"80c72458-af90-42c5-b8e4-25c61ac180a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -79,36 +79,16 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e0ebeafa-d24e-476a-9a0f-1cf4773d9483","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"819c1a9d-58bf-4a92-879c-c030b143a935","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"65a173c7-281e-424c-9ba3-73794ac313e1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"769024c1-135e-4d4f-a19b-e839062a83bc","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"304de72f-80cc-417b-8382-9ab1789a6dab","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b25f9e38-6c40-4b03-8461-92679a171ac2","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a21fdf06-5b82-4ee9-8bcd-2b60f67acb2d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"95b5978a-28ce-47e8-9895-130dc132bef3","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ff5708a6-df69-4896-9a86-da18baaea94f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"80c72458-af90-42c5-b8e4-25c61ac180a0","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fcd7adb8-a63d-4d4c-94fb-e99048a5bcc9","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"aae7a5ad-1e31-43bb-8273-ec381c7743c6","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ed032268-c578-414e-bcab-f26729375c58","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8550db88-3c7a-487f-bef0-fb8490d4102c","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"58ed2b8b-0515-4ad1-b2f9-f05d691395c6","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e0ebeafa-d24e-476a-9a0f-1cf4773d9483","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"819c1a9d-58bf-4a92-879c-c030b143a935","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"65a173c7-281e-424c-9ba3-73794ac313e1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"769024c1-135e-4d4f-a19b-e839062a83bc","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"304de72f-80cc-417b-8382-9ab1789a6dab","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b25f9e38-6c40-4b03-8461-92679a171ac2","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a21fdf06-5b82-4ee9-8bcd-2b60f67acb2d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"95b5978a-28ce-47e8-9895-130dc132bef3","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ff5708a6-df69-4896-9a86-da18baaea94f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"80c72458-af90-42c5-b8e4-25c61ac180a0","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fcd7adb8-a63d-4d4c-94fb-e99048a5bcc9","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"302506c1-3e24-487b-88d4-f6b6cb8fdfd3","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"aae7a5ad-1e31-43bb-8273-ec381c7743c6","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ed88f0a2-5987-49da-82c2-99be5e7a377f","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ed032268-c578-414e-bcab-f26729375c58","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f865ce2b-d5c4-49ce-8c5b-c17308608d6e","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"8550db88-3c7a-487f-bef0-fb8490d4102c","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a1b1cd6-b77f-4331-bd8a-620cf2677ea6","path":"sprites/Barril_quebrando_cristal/Barril_quebrando_cristal.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"58ed2b8b-0515-4ad1-b2f9-f05d691395c6","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
