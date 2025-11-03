@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Segredo",
   "bboxMode":2,
   "bbox_bottom":130,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"d4b2c30c-3864-472f-8507-6d92d6392125","name":"d4b2c30c-3864-472f-8507-6d92d6392125","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d4b2c30c-3864-472f-8507-6d92d6392125","name":"d4b2c30c-3864-472f-8507-6d92d6392125","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

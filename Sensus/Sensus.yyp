@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Sensus",
   "AudioGroups":[
-    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -40,7 +40,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Sensus",
   "resources":[
@@ -140,6 +140,7 @@
     {"id":{"name":"besouro_alerta","path":"sprites/besouro_alerta/besouro_alerta.yy",},},
     {"id":{"name":"besouro_andando","path":"sprites/besouro_andando/besouro_andando.yy",},},
     {"id":{"name":"besouro_ataque","path":"sprites/besouro_ataque/besouro_ataque.yy",},},
+    {"id":{"name":"besouro_dano","path":"sprites/besouro_dano/besouro_dano.yy",},},
     {"id":{"name":"besouro_morrendo","path":"sprites/besouro_morrendo/besouro_morrendo.yy",},},
     {"id":{"name":"besouro_parado","path":"sprites/besouro_parado/besouro_parado.yy",},},
     {"id":{"name":"Borda_labirinto","path":"sprites/Borda_labirinto/Borda_labirinto.yy",},},

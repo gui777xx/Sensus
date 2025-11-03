@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Em_cima_labirinto",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"f5741c9d-fd59-4064-8df1-c538f5f7593e","name":"f5741c9d-fd59-4064-8df1-c538f5f7593e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f5741c9d-fd59-4064-8df1-c538f5f7593e","name":"f5741c9d-fd59-4064-8df1-c538f5f7593e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

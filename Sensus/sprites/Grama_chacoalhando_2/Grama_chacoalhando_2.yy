@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Grama_chacoalhando_2",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0c5a88ff-f409-4a63-9ba3-b3dd6323c3b7","name":"0c5a88ff-f409-4a63-9ba3-b3dd6323c3b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0c5a88ff-f409-4a63-9ba3-b3dd6323c3b7","name":"0c5a88ff-f409-4a63-9ba3-b3dd6323c3b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

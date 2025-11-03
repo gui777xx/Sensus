@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"lesma",
   "bboxMode":0,
   "bbox_bottom":15,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0e3b7b36-8cc2-4278-a8f4-bff46dbb5eef","name":"0e3b7b36-8cc2-4278-a8f4-bff46dbb5eef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0e3b7b36-8cc2-4278-a8f4-bff46dbb5eef","name":"0e3b7b36-8cc2-4278-a8f4-bff46dbb5eef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

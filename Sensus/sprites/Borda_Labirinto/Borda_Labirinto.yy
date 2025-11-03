@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Borda_labirinto",
   "bboxMode":0,
   "bbox_bottom":62,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"9e06e200-3e89-4b64-87a2-4b0ded01b4c7","name":"9e06e200-3e89-4b64-87a2-4b0ded01b4c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9e06e200-3e89-4b64-87a2-4b0ded01b4c7","name":"9e06e200-3e89-4b64-87a2-4b0ded01b4c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
