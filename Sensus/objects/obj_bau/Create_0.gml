@@ -1,0 +1,2 @@
+aberto = false;
+animando = false;

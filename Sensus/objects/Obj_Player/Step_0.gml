@@ -55,8 +55,17 @@ if (knockback_timer > 0) {
     return;
 }
 
-// Teste manual
-if (keyboard_check(ord("E"))) receber_dano(noone);
+if (keyboard_check_pressed(ord("E"))) {
+    var controlador = instance_place(x, y, obj_controlador_bau);
+
+    if (controlador != noone) {
+        var bau = instance_nearest(controlador.x, controlador.y, obj_bau);
+
+        if (bau != noone && !bau.aberto) {
+            bau.abrir();
+        }
+    }
+}
 
 // Imunidade temporária
 if (Imune && current_time >= Tempo_imune) {
