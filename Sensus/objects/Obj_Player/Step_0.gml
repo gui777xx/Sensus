@@ -56,13 +56,20 @@ if (knockback_timer > 0) {
 }
 
 if (keyboard_check_pressed(ord("E"))) {
+    // verifica se há um controlador de baú na posição do jogador
     var controlador = instance_place(x, y, obj_controlador_bau);
 
     if (controlador != noone) {
+        // se quiser também abrir o baú visual, pode manter essa lógica
         var bau = instance_nearest(controlador.x, controlador.y, obj_bau);
 
         if (bau != noone && !bau.aberto) {
             bau.abrir();
+        }
+
+        // destrói apenas o controlador que o jogador está encostando
+        with (controlador) {
+            instance_destroy();
         }
     }
 }

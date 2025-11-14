@@ -279,8 +279,6 @@
     {"name":"inst_35F5CF51","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_15A505C3","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_5EE61B3E","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_19910FEC","path":"rooms/Room_2/Room_2.yy",},
@@ -306,6 +304,8 @@
     {"name":"inst_2A12C47","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_BB5B86C","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_6964B901","path":"rooms/Room_2/Room_2.yy",},
+    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -319,7 +319,7 @@
         {"$GMRInstance":"v2","%Name":"inst_6C9E4C59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C9E4C59","objectId":{"name":"obj_controlador_porta","path":"objects/obj_controlador_porta/obj_controlador_porta.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":9.750001,"x":1314.0,"y":631.0,},
         {"$GMRInstance":"v2","%Name":"inst_601F313","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_601F313","objectId":{"name":"obj_controlador_porta","path":"objects/obj_controlador_porta/obj_controlador_porta.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.583333,"scaleY":0.5833334,"x":1259.0,"y":868.0,},
         {"$GMRInstance":"v2","%Name":"inst_A4FEAAC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A4FEAAC","objectId":{"name":"obj_controlador_bau","path":"objects/obj_controlador_bau/obj_controlador_bau.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.1,"scaleY":1.6,"x":357.0,"y":365.0,},
-      ],"layers":[],"name":"Controladores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+      ],"layers":[],"name":"Controladores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Colisor_Adicional","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_1458F8D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1458F8D0","objectId":{"name":"obj_colissor_adicional","path":"objects/obj_colissor_adicional/obj_colissor_adicional.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.8000002,"scaleY":0.8,"x":306.0,"y":378.0,},
         {"$GMRInstance":"v2","%Name":"inst_12E694E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12E694E4","objectId":{"name":"obj_colissor_adicional","path":"objects/obj_colissor_adicional/obj_colissor_adicional.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.20000002,"scaleY":1.7,"x":603.0,"y":302.0,},
