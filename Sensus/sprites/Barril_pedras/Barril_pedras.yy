@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Barril_pedras",
   "bboxMode":2,
   "bbox_bottom":13,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","name":"8482b1c0-6a3a-4a97-a179-89c9ab471846","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

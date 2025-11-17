@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Caixa",
   "bboxMode":2,
   "bbox_bottom":11,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f6d258f4-03a3-45bf-b6c8-642abae1497d","name":"f6d258f4-03a3-45bf-b6c8-642abae1497d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f6d258f4-03a3-45bf-b6c8-642abae1497d","name":"f6d258f4-03a3-45bf-b6c8-642abae1497d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

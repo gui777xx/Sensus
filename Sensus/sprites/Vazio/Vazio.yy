@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Vazio",
   "bboxMode":0,
   "bbox_bottom":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fcf69f0e-1215-4e8b-94ca-0db1ecb1ba66","name":"fcf69f0e-1215-4e8b-94ca-0db1ecb1ba66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fcf69f0e-1215-4e8b-94ca-0db1ecb1ba66","name":"fcf69f0e-1215-4e8b-94ca-0db1ecb1ba66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

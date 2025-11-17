@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Cogumelo_vermelho_2",
   "bboxMode":0,
   "bbox_bottom":3,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d8ba360c-a742-4c85-bc9a-3152a95405ed","name":"d8ba360c-a742-4c85-bc9a-3152a95405ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d8ba360c-a742-4c85-bc9a-3152a95405ed","name":"d8ba360c-a742-4c85-bc9a-3152a95405ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

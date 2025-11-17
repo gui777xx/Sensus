@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Detalhes_labirinto",
   "bboxMode":0,
   "bbox_bottom":63,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7849ae22-15db-4e87-83c6-be7b2012f9ac","name":"7849ae22-15db-4e87-83c6-be7b2012f9ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7849ae22-15db-4e87-83c6-be7b2012f9ac","name":"7849ae22-15db-4e87-83c6-be7b2012f9ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

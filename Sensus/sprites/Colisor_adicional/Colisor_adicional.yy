@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Colisor_adicional",
   "bboxMode":0,
   "bbox_bottom":9,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7c7c4b3e-19a2-484b-b71d-c63ba7de612f","name":"7c7c4b3e-19a2-484b-b71d-c63ba7de612f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7c7c4b3e-19a2-484b-b71d-c63ba7de612f","name":"7c7c4b3e-19a2-484b-b71d-c63ba7de612f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

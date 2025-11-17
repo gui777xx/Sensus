@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Sprite_controlador_bau",
   "bboxMode":1,
   "bbox_bottom":9,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"125362f2-a1a5-4087-9cbc-3f06d95955c5","name":"125362f2-a1a5-4087-9cbc-3f06d95955c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"125362f2-a1a5-4087-9cbc-3f06d95955c5","name":"125362f2-a1a5-4087-9cbc-3f06d95955c5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

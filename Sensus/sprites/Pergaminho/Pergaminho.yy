@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Pergaminho",
   "bboxMode":0,
   "bbox_bottom":6,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6dbf43a1-2692-4bca-a8b4-3e6af681e359","name":"6dbf43a1-2692-4bca-a8b4-3e6af681e359","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6dbf43a1-2692-4bca-a8b4-3e6af681e359","name":"6dbf43a1-2692-4bca-a8b4-3e6af681e359","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
