@@ -1,7 +1,7 @@
 besouro_estado = "parado";
 sprite_index = besouro_parado;
-velocidade = 1;
-distancia_ativacao = 40;
+velocidade = 1.9;
+distancia_ativacao = 50;
 contador_passos = 0;
 intervalo_passos = 5;
 alpha_morte = 1; // controle de transparência
