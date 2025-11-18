@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Buraco",
   "bboxMode":2,
   "bbox_bottom":9,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"79a2d816-937f-4cca-bc94-3f4f56b7d82e","name":"79a2d816-937f-4cca-bc94-3f4f56b7d82e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"79a2d816-937f-4cca-bc94-3f4f56b7d82e","name":"79a2d816-937f-4cca-bc94-3f4f56b7d82e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
