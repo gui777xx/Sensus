@@ -1,11 +1,11 @@
-// Ajustando a Profuundidade
+// Ajustando a Profundidade
 
 // Inicializa variáveis de colisão frontal
 if (!variable_instance_exists(id, "colide_cima")) {
     colide_cima   = false;
     colide_baixo  = false;
     colide_frente = false;
-    colide_atras  = false; // <-- Aqui!
+    colide_atras  = false;
     objeto_colidido_frente = noone;
 }
 
@@ -56,18 +56,15 @@ if (knockback_timer > 0) {
 }
 
 if (keyboard_check_pressed(ord("E"))) {
-    // verifica se há um controlador de baú na posição do jogador
     var controlador = instance_place(x, y, obj_controlador_bau);
 
     if (controlador != noone) {
-        // se quiser também abrir o baú visual, pode manter essa lógica
         var bau = instance_nearest(controlador.x, controlador.y, obj_bau);
 
         if (bau != noone && !bau.aberto) {
             bau.abrir();
         }
 
-        // destrói apenas o controlador que o jogador está encostando
         with (controlador) {
             instance_destroy();
         }
@@ -89,7 +86,6 @@ if (recebendo_dano) {
     }
     return;
 }
-
 
 // Controle de ataque
 if (mouse_check_button_pressed(mb_left) && !atacando) {
@@ -115,23 +111,19 @@ if (mouse_check_button_pressed(mb_left) && !atacando) {
     sprite_index = ataque_sprite;
     image_index = 0;
     image_speed = 1;
-	
-	
 
-    // Criação do obj_slash na direção do ataque;
-var distancia = 4
-var x_slash = x + lengthdir_x(distancia, angulo);
-var y_slash = y + lengthdir_y(distancia, angulo);
+    var distancia = 4;
+    var x_slash = x + lengthdir_x(distancia, angulo);
+    var y_slash = y + lengthdir_y(distancia, angulo);
 
-// Se o ataque for para cima, adiciona um ajuste
-if (angulo >= 42 && angulo < 138) {
-    y_slash -= 4;
-}
+    if (angulo >= 42 && angulo < 138) {
+        y_slash -= 4;
+    }
 
-var slash = instance_create_layer(x_slash, y_slash, layer, obj_slash);
-slash.image_angle = angulo;
-slash.player_x = x;
-slash.player_y = y;
+    var slash = instance_create_layer(x_slash, y_slash, layer, obj_slash);
+    slash.image_angle = angulo;
+    slash.player_x = x;
+    slash.player_y = y;
     return;
 }
 
@@ -147,7 +139,6 @@ if (atacando) {
 if (!atacando) {
     image_xscale = (mouse_x < x) ? -1 : 1;
 }
-
 
 // Input
 var cima      = keyboard_check(vk_up)    || keyboard_check(ord("W"));
@@ -184,33 +175,41 @@ if (!place_meeting(x, y_novo, [tile, colisivo, colisor])) y = y_novo;
 
 var se_moveu = (x != x_ant) || (y != y_ant);
 
-// Define sprite de movimento
-if (se_moveu) {
-	var angulo_mouse = point_direction(x, y, mouse_x, mouse_y);
-    var indo_ao_contrario = ((image_xscale == 1 && dir_h < 0) || (image_xscale == -1 && dir_h > 0));
-    var sprite_mov;
-
-    if (angulo_mouse >= 36 && angulo_mouse < 144) {
-        sprite_mov = indo_ao_contrario ? Player_re_cima : Player_correndo_cima;
-    } else if (angulo_mouse >= 198 && angulo_mouse < 342) {
-        sprite_mov = indo_ao_contrario ? Player_re_baixo : Player_correndo_baixo;
-    } else {
-        sprite_mov = indo_ao_contrario ? Player_re : Player_correndo;
-    }
-
-    sprite_index = sprite_mov;
+// ----------------------
+// NOVA LÓGICA DE ESTADO
+// ----------------------
+if (estar == "descendo") {
+    sprite_index = Player_descendo;
+    image_speed  = 1;
+    image_xscale = 1; // força sempre virado 
+    // aqui você pode travar movimento se quiser
 } else {
-	
-if (!atacando && !se_moveu) {
-    var angulo_mouse = point_direction(x, y, mouse_x, mouse_y);
+    // Define sprite de movimento normal
+    if (se_moveu) {
+        var angulo_mouse = point_direction(x, y, mouse_x, mouse_y);
+        var indo_ao_contrario = ((image_xscale == 1 && dir_h < 0) || (image_xscale == -1 && dir_h > 0));
+        var sprite_mov;
 
-    if (angulo_mouse >= 36 && angulo_mouse < 144) {
-        sprite_index = Player_parado_cima;
-    } else if (angulo_mouse >= 198 && angulo_mouse < 342) {
-        sprite_index = Player_parado_baixo;
+        if (angulo_mouse >= 36 && angulo_mouse < 144) {
+            sprite_mov = indo_ao_contrario ? Player_re_cima : Player_correndo_cima;
+        } else if (angulo_mouse >= 198 && angulo_mouse < 342) {
+            sprite_mov = indo_ao_contrario ? Player_re_baixo : Player_correndo_baixo;
+        } else {
+            sprite_mov = indo_ao_contrario ? Player_re : Player_correndo;
+        }
+
+        sprite_index = sprite_mov;
     } else {
-        sprite_index = Player_parado;
-    }
-}
+        if (!atacando && !se_moveu) {
+            var angulo_mouse = point_direction(x, y, mouse_x, mouse_y);
 
+            if (angulo_mouse >= 36 && angulo_mouse < 144) {
+                sprite_index = Player_parado_cima;
+            } else if (angulo_mouse >= 198 && angulo_mouse < 342) {
+                sprite_index = Player_parado_baixo;
+            } else {
+                sprite_index = Player_parado;
+            }
+        }
+    }
 }
