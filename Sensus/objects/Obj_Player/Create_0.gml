@@ -1,4 +1,5 @@
 window_set_size(1920, 1080);
+estar = "normal"
 
 Vel = 1;
 Vel_inicial = 1;
