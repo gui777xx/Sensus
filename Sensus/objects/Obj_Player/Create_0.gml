@@ -4,6 +4,8 @@ estar = "normal"
 Vel = 1;
 Vel_inicial = 1;
 
+tem_chave_inglesa = false;
+
 Imune = false;
 Tempo_imune = 0;
 

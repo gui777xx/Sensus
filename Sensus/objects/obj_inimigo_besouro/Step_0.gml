@@ -91,3 +91,4 @@ else if (besouro_estado == "seguindo") {
         }
     } // Fim do if (contador_passos)
 } // Fim do else if (besouro_estado == "seguindo")
+}

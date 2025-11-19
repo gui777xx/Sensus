@@ -5,7 +5,17 @@ if (larva_estado == "dormindo") {
         larva_estado = "acordando";
         sprite_index = Larva_acordando;
         image_index = 0;
+
+        // Ativa alerta global
+        global.larvas_alerta = true;
     }
+}
+
+// Se qualquer larva estiver em alerta, todas acordam
+if (global.larvas_alerta && larva_estado == "dormindo") {
+    larva_estado = "acordando";
+    sprite_index = Larva_acordando;
+    image_index = 0;
 }
 
 // Acordando
