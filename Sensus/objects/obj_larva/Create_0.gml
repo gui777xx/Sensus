@@ -1,4 +1,5 @@
 larva_estado = "dormindo";
+global.larvas_alerta = false;
 sprite_index = Larva_enrrolada;
 velocidade = 1;
 distancia_ativacao = 40;
