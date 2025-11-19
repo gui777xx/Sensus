@@ -103,5 +103,6 @@ if (besouro_estado == "seguindo") {
                 receber_dano(other); 
             }
         }
-    }
+    } // Fim do if (contador_passos)
+} // Fim do else if (besouro_estado == "seguindo")
 }

@@ -88,7 +88,8 @@ if (recebendo_dano) {
 }
 
 // Controle de ataque
-if (mouse_check_button_pressed(mb_left) && !atacando) {
+if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa) {
+
     atacando = true;
 
     var angulo = point_direction(x, y, mouse_x, mouse_y);
@@ -182,7 +183,15 @@ if (estar == "descendo") {
     sprite_index = Player_descendo;
     image_speed  = 1;
     image_xscale = 1; // força sempre virado 
-    // aqui você pode travar movimento se quiser
+
+    // Verifica se chegou no último frame
+    if (image_index >= image_number - 1) {
+        image_speed = 0;   // congela a animação
+        hspeed = 0;        // trava movimento horizontal
+        vspeed = 0;        // trava movimento vertical
+        // ou a variável de movimento que você estiver usando
+    }
+
 } else {
     // Define sprite de movimento normal
     if (se_moveu) {
