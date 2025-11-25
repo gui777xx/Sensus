@@ -1,18 +1,18 @@
-// Subindo
+// Travar no topo
 if (image_speed > 0 && image_index >= image_number - 1) {
     image_speed = 0;
     image_index = image_number - 1;
 }
 
-// Descendo
+// Travar na base
 if (image_speed < 0 && image_index <= 0) {
     image_speed = 0;
     image_index = 0;
 }
 
-// Controle de colisão com base na posição da estaca
+// Colisão: qualquer frame acima de 0 já bloqueia
 if (image_index <= 0) {
-    mask_index = Vazio; // Sem colisão
+    mask_index = Vazio;             // sem colisão quando totalmente abaixada
 } else {
-    mask_index = Estacas_esquerda; // Ou o sprite que define a colisão
+    mask_index = Estacas_esquerda;  // colisão durante a subida e no topo
 }

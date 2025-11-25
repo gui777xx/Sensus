@@ -35,7 +35,9 @@
     {"$GMFolder":"","%Name":"player","folderPath":"folders/Sprites/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Splash_Screen","folderPath":"folders/Sprites/Splash_Screen.yy","name":"Splash_Screen","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_screenshake-1.0.0","name":"io.gamemaker.gm_filter_screenshake-1.0.0","path":"io.gamemaker.gm_filter_screenshake-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -98,7 +100,6 @@
     {"id":{"name":"obj_grama","path":"objects/obj_grama/obj_grama.yy",},},
     {"id":{"name":"obj_hitbox_frente","path":"objects/obj_hitbox_frente/obj_hitbox_frente.yy",},},
     {"id":{"name":"obj_hitbox_inimigos","path":"objects/obj_hitbox_inimigos/obj_hitbox_inimigos.yy",},},
-    {"id":{"name":"obj_inimigo_besouro","path":"objects/obj_inimigo_besouro/obj_inimigo_besouro.yy",},},
     {"id":{"name":"obj_inimigo_escorpiao","path":"objects/obj_inimigo_escorpiao/obj_inimigo_escorpiao.yy",},},
     {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_lamparina_mesa","path":"objects/obj_lamparina_mesa/obj_lamparina_mesa.yy",},},
