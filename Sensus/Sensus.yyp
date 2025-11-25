@@ -35,7 +35,9 @@
     {"$GMFolder":"","%Name":"player","folderPath":"folders/Sprites/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Splash_Screen","folderPath":"folders/Sprites/Splash_Screen.yy","name":"Splash_Screen","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_screenshake-1.0.0","name":"io.gamemaker.gm_filter_screenshake-1.0.0","path":"io.gamemaker.gm_filter_screenshake-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -150,6 +152,7 @@
     {"id":{"name":"besouro_morrendo","path":"sprites/besouro_morrendo/besouro_morrendo.yy",},},
     {"id":{"name":"besouro_parado","path":"sprites/besouro_parado/besouro_parado.yy",},},
     {"id":{"name":"Borda_labirinto","path":"sprites/Borda_labirinto/Borda_labirinto.yy",},},
+    {"id":{"name":"Boss_alerta","path":"sprites/Boss_alerta/Boss_alerta.yy",},},
     {"id":{"name":"Boss_parado","path":"sprites/Boss_parado/Boss_parado.yy",},},
     {"id":{"name":"Buraco","path":"sprites/Buraco/Buraco.yy",},},
     {"id":{"name":"Caixa_carvao","path":"sprites/Caixa_carvao/Caixa_carvao.yy",},},

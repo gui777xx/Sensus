@@ -320,6 +320,7 @@
     {"name":"inst_48240635","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_3700ECD2","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_BB5B86C","path":"rooms/Room_2/Room_2.yy",},
+    {"name":"inst_4505DD9","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_1868AD07","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_76C579C0","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_4FA29E8B","path":"rooms/Room_2/Room_2.yy",},
@@ -377,7 +378,6 @@
     {"name":"inst_2CA1C75A_1","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_5F2A47E9","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_3C4B27F8","path":"rooms/Room_2/Room_2.yy",},
-    {"name":"inst_4505DD9","path":"rooms/Room_2/Room_2.yy",},
   ],
   "isDnd":false,
   "layers":[
