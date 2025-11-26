@@ -1,93 +1,99 @@
 // Dormindo
-if (larva_estado == "dormindo") {
+if (besouro_estado == "parado") {
     var dist = point_distance(x, y, obj_player.x, obj_player.y);
     if (dist < distancia_ativacao) {
-        larva_estado = "acordando";
-        sprite_index = besouro_morrendo;
+        besouro_estado = "acordando";
+        sprite_index = besouro_alerta;
         image_index = 0;
-
-        // Ativa alerta global
+        image_speed = 1;
         global.larvas_alerta = true;
     }
 }
 
-// Se qualquer larva estiver em alerta, todas acordam
-if (global.larvas_alerta && larva_estado == "dormindo") {
-    larva_estado = "acordando";
-    sprite_index = besouro_alerta;
-    image_index = 0;
-}
-
 // Acordando
-else if (larva_estado == "acordando") {
-    // Virar para o jogador
-    if (obj_player.x > x) {
-        image_xscale = -1;
-    } else {
-        image_xscale = 1;
-    }
+else if (besouro_estado == "acordando") {
+    if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
 
     if (image_index >= image_number - 1) {
-        larva_estado = "seguindo";
+        besouro_estado = "seguindo";
         sprite_index = besouro_andando;
+        image_speed = 1;
     }
 }
 
-// Seguindo
-else if (larva_estado == "seguindo") {
-    // Virar para o jogador
-    if (obj_player.x > x) {
-        image_xscale = -1;
+// Seguindo (andando e causando dano por colisão)
+else if (besouro_estado == "seguindo") {
+    if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
+
+    var dist = point_distance(x, y, obj_player.x, obj_player.y);
+
+    if (ataque_cooldown > 0) ataque_cooldown -= 1;
+
+    if (dist < distancia_ataque && ataque_cooldown <= 0) {
+        besouro_estado = "atacando";
+        sprite_index = besouro_ataque;
+        image_index = 0;
+        image_speed = 1;
+        ataque_dir = point_direction(x, y, obj_player.x, obj_player.y);
+        ataque_tempo = 0;
     } else {
-        image_xscale = 1;
+        contador_passos += 1;
+        if (contador_passos >= intervalo_passos) {
+            contador_passos = 0;
+            var dir = point_direction(x, y, obj_player.x, obj_player.y);
+            var new_x = x + lengthdir_x(velocidade, dir);
+            var new_y = y + lengthdir_y(velocidade, dir);
+
+            if (!place_meeting(new_x, new_y, obj_colisor_inimigos) 
+            && !place_meeting(new_x, new_y, tiles) 
+            && !place_meeting(new_x, new_y, colisivo)) {
+                x = new_x;
+                y = new_y;
+            }
+        }
+
+        // Dano por colisão enquanto anda
+        if (place_meeting(x, y, obj_player)) {
+            with (obj_player) {
+                receber_dano(other);
+            }
+        }
     }
+}
 
-    contador_passos += 1;
-    if (contador_passos >= intervalo_passos) {
-        contador_passos = 0;
+// Atacando (Dash só a partir do frame 10)
+// Atacando (Dash só a partir do frame 10)
+else if (besouro_estado == "atacando") {
+    if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
 
-        // Direção para o jogador
-        var dir = point_direction(x, y, obj_player.x, obj_player.y);
+    ataque_tempo += 1;
 
-        // Tenta andar direto nessa direção
-        var new_x = x + lengthdir_x(velocidade, dir);
-        var new_y = y + lengthdir_y(velocidade, dir);
+    // Só começa a se mover e causar dano a partir do frame 10
+    if (image_index >= 10) {
+        var new_x = x + lengthdir_x(ataque_velocidade, ataque_dir);
+        var new_y = y + lengthdir_y(ataque_velocidade, ataque_dir);
 
-        // Verifica colisão com tiles ou objetos colisor
-        if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+        if (!place_meeting(new_x, new_y, obj_colisor_inimigos) 
+        && !place_meeting(new_x, new_y, tiles) 
+        && !place_meeting(new_x, new_y, colisivo)) {
             x = new_x;
             y = new_y;
-        } else {
-            // Se tem colisão, tenta desviar
-
-            // Tenta ângulos alternativos para desviar: 30°, -30°, 60°, -60°, 90°, -90°
-            var desvio_angulo;
-            var tentou_andar = false;
-            var angulos_desvio = [30, -30, 60, -60, 90, -90];
-
-            for (var i = 0; i < array_length(angulos_desvio); i++) {
-                desvio_angulo = dir + angulos_desvio[i];
-                new_x = x + lengthdir_x(velocidade, desvio_angulo);
-                new_y = y + lengthdir_y(velocidade, desvio_angulo);
-                if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
-                    x = new_x;
-                    y = new_y;
-                    tentou_andar = true;
-                    break;
-                }
-            }
-
-            // Se não conseguiu desviar, não anda
-            if (!tentou_andar) {
-                // opcional: fica parado ou tenta outra lógica
-            }
         }
 
-        // Se colidiu com o jogador, causa dano
-        if (place_meeting(x, y, obj_hitbox_inimigos)) {
+        // Dano por colisão durante o Dash
+        if (place_meeting(x, y, obj_player)) {
             with (obj_player) {
-                receber_dano(other); 
+                receber_dano(other);
             }
         }
     }
+
+    // ✅ Agora só sai do ataque quando a animação terminar
+    if (image_index >= image_number - 1) {
+        besouro_estado = "seguindo";
+        sprite_index = besouro_andando;
+        image_speed = 1;
+        ataque_cooldown = ataque_cooldown_max;
+    }
 }
+
