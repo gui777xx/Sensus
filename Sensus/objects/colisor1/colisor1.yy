@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_barreira_quebrando_esquerda",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"colisor1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_barreira_quebrando_esquerda",
+  "name":"colisor1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"colisor",
-    "path":"objects/colisor/colisor.yy",
+    "name":"obj_colisor_inimigos1",
+    "path":"objects/obj_colisor_inimigos1/obj_colisor_inimigos1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Barreira_quebrando_esquerda",
-    "path":"sprites/Barreira_quebrando_esquerda/Barreira_quebrando_esquerda.yy",
+    "name":"S_colisor1",
+    "path":"sprites/S_colisor1/S_colisor1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

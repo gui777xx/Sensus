@@ -19,6 +19,6 @@ image_alpha = alpha_fade;
 if (image_index <= 20) {
     mask_index = Barreira_quebrando_esquerda; // ou o sprite que tem a colisão
 } else {
-    mask_index = 0; // Remove a máscara de colisão
+    mask_index = Vazio; // Remove a máscara de colisão
 }
 
