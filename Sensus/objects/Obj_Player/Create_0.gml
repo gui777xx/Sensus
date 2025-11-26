@@ -1,4 +1,6 @@
-window_set_size(1920, 1080);
+window_set_size(1280, 720);
+window_set_fullscreen(true);
+
 estar = "normal"
 
 Vel = 1;
