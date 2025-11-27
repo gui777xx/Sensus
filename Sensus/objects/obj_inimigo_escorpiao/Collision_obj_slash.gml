@@ -1,1 +1,0 @@
-troca_estado(estado_dano);
