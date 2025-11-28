@@ -9,17 +9,27 @@ contador_passos = 0;
 intervalo_passos = 5;
 
 // Distâncias
-distancia_ativacao = 40;   // quando acorda
-distancia_ataque   = 60;   // quando dá a cabeçada
+distancia_ativacao   = 40;
+distancia_ataque_min = 60;
+distancia_ataque_max = 100;
+distancia_ataque     = irandom_range(distancia_ataque_min, distancia_ataque_max);
 
 // Ataque
-ataque_velocidade = 6;     // velocidade do dash
-ataque_tempo = 0;          // contador de frames do ataque
-ataque_dir = 0;            // direção calculada no momento do ataque
+ataque_velocidade   = 10;     // velocidade normal do dash
+ataque_tempo        = 0;      
+ataque_dir          = 0;      
+frame_inicio_dash   = 10;     // frame em que começa o dash
+
+// Burst variável
+burst_min = 12;               
+burst_max = 18;               
 
 // Cooldown de ataque
-ataque_cooldown = 0;       // contador
-ataque_cooldown_max = 45;  // tempo de espera entre ataques (em frames)
+ataque_cooldown     = 0;        
+ataque_cooldown_max = 65;   
+
+// Controle de combo
+ataque_combo = false; // se vai engatar segundo dash
 
 // Controle de morte
 alpha_morte = 1;
