@@ -1,4 +1,23 @@
-// Dormindo
+// --- Morte ---
+if (place_meeting(x, y, obj_slash)) {
+    besouro_estado = "morrendo";
+    sprite_index = besouro_morrendo;
+    image_index = 0;
+    image_speed = 0.5;
+}
+
+if (besouro_estado == "morrendo") {
+    if (image_index >= image_number - 1) {
+        image_speed = 0;
+        alpha_morte -= 0.05;
+        image_alpha = alpha_morte;
+        if (alpha_morte <= 0.05) {
+            instance_destroy();
+        }
+    }
+}
+
+// --- Parado ---
 if (besouro_estado == "parado") {
     var dist = point_distance(x, y, obj_player.x, obj_player.y);
     if (dist < distancia_ativacao) {
@@ -10,7 +29,7 @@ if (besouro_estado == "parado") {
     }
 }
 
-// Acordando
+// --- Acordando ---
 else if (besouro_estado == "acordando") {
     if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
 
@@ -21,7 +40,7 @@ else if (besouro_estado == "acordando") {
     }
 }
 
-// Seguindo (andando e causando dano por colisão)
+// --- Seguindo ---
 else if (besouro_estado == "seguindo") {
     if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
 
@@ -36,6 +55,10 @@ else if (besouro_estado == "seguindo") {
         image_speed = 1;
         ataque_dir = point_direction(x, y, obj_player.x, obj_player.y);
         ataque_tempo = 0;
+        ataque_cooldown = ataque_cooldown_max;
+
+        // Sorteia nova distância para o próximo ataque
+        distancia_ataque = irandom_range(distancia_ataque_min, distancia_ataque_max);
     } else {
         contador_passos += 1;
         if (contador_passos >= intervalo_passos) {
@@ -61,15 +84,24 @@ else if (besouro_estado == "seguindo") {
     }
 }
 
-// Atacando (Dash só a partir do frame 10)
-// Atacando (Dash só a partir do frame 10)
+// --- Atacando ---
 else if (besouro_estado == "atacando") {
     if (obj_player.x > x) image_xscale = -1; else image_xscale = 1;
 
     ataque_tempo += 1;
 
-    // Só começa a se mover e causar dano a partir do frame 10
-    if (image_index >= 10) {
+    if (image_index >= frame_inicio_dash) {
+        // Burst inicial no frame 10
+        if (image_index == frame_inicio_dash) {
+            if (!ataque_combo) {
+                ataque_velocidade = irandom_range(burst_min, burst_max); // primeiro dash
+            } else {
+                ataque_velocidade = irandom_range(burst_max, burst_max + 4); // segundo dash mais forte
+            }
+        } else {
+            ataque_velocidade = 10;
+        }
+
         var new_x = x + lengthdir_x(ataque_velocidade, ataque_dir);
         var new_y = y + lengthdir_y(ataque_velocidade, ataque_dir);
 
@@ -88,12 +120,25 @@ else if (besouro_estado == "atacando") {
         }
     }
 
-    // ✅ Agora só sai do ataque quando a animação terminar
+    // Sai do ataque quando a animação terminar
     if (image_index >= image_number - 1) {
-        besouro_estado = "seguindo";
-        sprite_index = besouro_andando;
-        image_speed = 1;
-        ataque_cooldown = ataque_cooldown_max;
+        var dist = point_distance(x, y, obj_player.x, obj_player.y);
+
+        if (!ataque_combo && dist < distancia_ataque_min) {
+            // Engata segundo dash
+            ataque_combo = true;
+            besouro_estado = "atacando";
+            sprite_index = besouro_ataque;
+            image_index = 0;
+            image_speed = 1;
+            ataque_dir = point_direction(x, y, obj_player.x, obj_player.y);
+            ataque_tempo = 0;
+        } else {
+            // Volta ao normal
+            ataque_combo = false;
+            besouro_estado = "seguindo";
+            sprite_index = besouro_andando;
+            image_speed = 1;
+        }
     }
 }
-
