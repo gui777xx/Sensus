@@ -9,7 +9,7 @@ contador_passos = 0;
 intervalo_passos = 5;
 
 // Distâncias
-distancia_ativacao   = 40;
+distancia_ativacao   = 80;
 distancia_ataque_min = 60;
 distancia_ataque_max = 100;
 distancia_ataque     = irandom_range(distancia_ataque_min, distancia_ataque_max);
@@ -19,6 +19,7 @@ ataque_velocidade   = 10;     // velocidade normal do dash
 ataque_tempo        = 0;      
 ataque_dir          = 0;      
 frame_inicio_dash   = 10;     // frame em que começa o dash
+ataque_fase         = "";     // <<< inicializado aqui
 
 // Burst variável
 burst_min = 12;               
@@ -32,7 +33,7 @@ ataque_cooldown_max = 65;
 ataque_combo = false; // se vai engatar segundo dash
 
 // Controle de morte
-alpha_morte = 1;
+alpha_morte = 3;
 
 // Tilemaps de colisão
 tiles    = layer_tilemap_get_id("Tiles_Parede_Cantos");
