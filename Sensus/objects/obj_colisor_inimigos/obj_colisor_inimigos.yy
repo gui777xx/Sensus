@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Colisor_adicional",
+    "path":"sprites/Colisor_adicional/Colisor_adicional.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

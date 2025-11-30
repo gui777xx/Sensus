@@ -46,7 +46,7 @@ function esta_em_buraco() {
 function receber_dano(source) {
     if (!Imune) {
         Imune = true;
-        Tempo_imune = current_time + 1100; 
+        Tempo_imune = current_time + 1400; 
         global.Vida_jogador -= 1;
         recebendo_dano = true;
 

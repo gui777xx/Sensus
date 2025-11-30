@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_colisor_inimigos1",
-  "eventList":[],
+  "%Name":"obj_gosma",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_colisor_inimigos1",
+  "name":"obj_gosma",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Gosma",
+    "path":"sprites/Gosma/Gosma.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
