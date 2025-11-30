@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"besouro_parado",
   "bboxMode":2,
-  "bbox_bottom":18,
+  "bbox_bottom":17,
   "bbox_left":1,
   "bbox_right":20,
   "bbox_top":6,

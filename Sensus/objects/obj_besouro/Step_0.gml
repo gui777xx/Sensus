@@ -1,21 +1,24 @@
-// --- Morte: receber dano do slash e processar fade-out ---
-if (besouro_estado != "morrendo") {
-    if (place_meeting(x, y, obj_slash)) {
-        besouro_estado = "morrendo";
-        sprite_index = besouro_morrendo;
-        image_index = 0;
-        image_speed = 0.5;
-    }
+// STEP EVENT do obj_besouro
+
+// Pós-dano: i-frames extras
+if (invulneravel_timer > 0) {
+    invulneravel_timer -= 1;
+    invulneravel = true;
+} else if (besouro_estado != "dano" && besouro_estado != "morrendo") {
+    invulneravel = false;
 }
 
-if (besouro_estado == "morrendo") {
+// --- Estado de morte ---
+
+
+
+// --- Estado de dano ---
+if (besouro_estado == "dano") {
+    // Travado e invulnerável; só aguarda animação terminar
+    image_xscale = (obj_player.x > x) ? -1 : 1;
+
     if (image_index >= image_number - 1) {
-        image_speed = 0;
-        alpha_morte -= 0.05;
-        image_alpha = alpha_morte;
-        if (alpha_morte <= 0.05) {
-            instance_destroy();
-        }
+        besouro_finalizar_dano();
     }
     exit;
 }
@@ -50,27 +53,32 @@ else if (besouro_estado == "seguindo") {
     var dist = point_distance(x, y, obj_player.x, obj_player.y);
     if (ataque_cooldown > 0) ataque_cooldown -= 1;
 
-    // Ataca somente se estiver longe
-    if (dist > distancia_ataque && ataque_cooldown <= 0) {
+    // Dash se estiver próximo
+    if (dist < distancia_ataque && ataque_cooldown <= 0) {
         besouro_estado = "atacando";
         sprite_index = besouro_ataque;
         image_index = 0;
         image_speed = 1;
 
-        // Mira nas pernas do player usando bbox_bottom
-        var alvo_x = obj_player.x;
-        var alvo_y = obj_player.bbox_bottom;
-        ataque_dir = point_direction(x, y, alvo_x, alvo_y);
+        // Mira com leve desvio controlado
+        var alvo_x = obj_hitbox_inimigos.x;
+        var alvo_y = obj_hitbox_inimigos.bbox_bottom;
+        var dir_base = point_direction(x, y, alvo_x, alvo_y);
+        var desvio   = irandom_range(-ataque_desvio_max, ataque_desvio_max);
+        ataque_dir = dir_base + desvio;
 
         ataque_tempo = 0;
         ataque_cooldown = ataque_cooldown_max;
         ataque_fase = "carregando";
         distancia_ataque = irandom_range(distancia_ataque_min, distancia_ataque_max);
-    } else {
+    }
+
+    // Caso contrário, anda em direção ao player
+    else if (dist < distancia_seguir) {
         contador_passos += 1;
         if (contador_passos >= intervalo_passos) {
             contador_passos = 0;
-            var dir = point_direction(x, y, obj_player.x, obj_player.y);
+            var dir = point_direction(x, y, obj_hitbox_inimigos.x, obj_hitbox_inimigos.y);
             var new_x = x + lengthdir_x(velocidade, dir);
             var new_y = y + lengthdir_y(velocidade, dir);
 
@@ -82,11 +90,6 @@ else if (besouro_estado == "seguindo") {
             }
         }
 
-        if (place_meeting(x, y, obj_player)) {
-            with (obj_player) {
-                receber_dano(other);
-            }
-        }
     }
 }
 
@@ -96,9 +99,10 @@ else if (besouro_estado == "atacando") {
     ataque_tempo += 1;
 
     if (ataque_fase == "carregando") {
+        // Espera até o frame 9 antes de iniciar o dash
         if (image_index >= frame_inicio_dash) {
             ataque_fase = "dash";
-            ataque_velocidade = irandom_range(6, 10); // dash mais lento
+            ataque_velocidade = 4; // controlada
         }
     }
 
@@ -106,24 +110,27 @@ else if (besouro_estado == "atacando") {
         var new_x = x + lengthdir_x(ataque_velocidade, ataque_dir);
         var new_y = y + lengthdir_y(ataque_velocidade, ataque_dir);
 
+        // Checa colisão com inimigos e tilemap
         if (!place_meeting(new_x, new_y, obj_colisor_inimigos)
         && !place_meeting(new_x, new_y, tiles)
         && !place_meeting(new_x, new_y, colisivo)) {
             x = new_x;
             y = new_y;
         } else {
-            move_contact_solid(ataque_dir, ataque_velocidade);
+            // Se colidir, cancela o dash e volta a seguir
+            besouro_estado = "seguindo";
+            sprite_index = besouro_andando;
+            image_speed = 1;
+            ataque_fase = "";
         }
 
-        if (place_meeting(x, y, obj_player)) {
+        if (place_meeting(x, y, obj_hitbox_inimigos)) {
             with (obj_player) {
                 receber_dano(other);
-                receber_dano(other); // dano duplicado
             }
         }
 
-        ataque_velocidade = max(ataque_velocidade - 1, 4);
-
+        // Dash dura até o fim da animação
         if (image_index >= image_number - 1) {
             besouro_estado = "seguindo";
             sprite_index = besouro_andando;
