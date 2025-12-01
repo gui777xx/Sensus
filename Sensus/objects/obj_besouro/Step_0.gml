@@ -54,7 +54,7 @@ else if (besouro_estado == "seguindo") {
     if (ataque_cooldown > 0) ataque_cooldown -= 1;
 
     // Dash se estiver próximo
-    if (dist < distancia_ataque && ataque_cooldown <= 0) {
+    if (dist > distancia_ataque && ataque_cooldown <= 0) {
         besouro_estado = "atacando";
         sprite_index = besouro_ataque;
         image_index = 0;
@@ -96,13 +96,13 @@ else if (besouro_estado == "seguindo") {
 // --- Atacando ---
 else if (besouro_estado == "atacando") {
     image_xscale = (obj_player.x > x) ? -1 : 1;
-    ataque_tempo += 1;
+    ataque_tempo += 0.4;
 
     if (ataque_fase == "carregando") {
         // Espera até o frame 9 antes de iniciar o dash
         if (image_index >= frame_inicio_dash) {
             ataque_fase = "dash";
-            ataque_velocidade = 2; // controlada
+            ataque_velocidade = 3; // controlada
         }
     }
 

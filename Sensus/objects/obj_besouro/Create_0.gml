@@ -6,13 +6,13 @@ sprite_index = besouro_parado;
 // Movimento
 velocidade = 2;
 contador_passos = 0;
-intervalo_passos = 5;
+intervalo_passos = 7;
 
 // Distâncias
 distancia_ativacao   = 80;
 distancia_seguir     = 200; // até onde anda atrás do player
-distancia_ataque_min = 45;
-distancia_ataque_max = 55;
+distancia_ataque_min = 25;
+distancia_ataque_max = 35;
 distancia_ataque     = irandom_range(distancia_ataque_min, distancia_ataque_max);
 
 // Ataque
@@ -23,7 +23,7 @@ frame_inicio_dash   = 9;   // espera até o frame 9
 ataque_fase         = "";
 
 // Aleatoriedade do ângulo (desvio máximo em graus)
-ataque_desvio_max = 2; // diminui a aleatoriedade do ângulo
+ataque_desvio_max = 1; // diminui a aleatoriedade do ângulo
 
 // Cooldown de ataque
 ataque_cooldown     = 0;
