@@ -106,8 +106,11 @@ if (recebendo_dano) {
     return;
 }
 
+// ----------------------
 // Controle de ataque
-if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa) {
+// ----------------------
+// >>> BLOQUEIO EXTRA: não atacar se estiver descendo <<<
+if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa && estar != "descendo") {
 
     atacando = true;
 
@@ -208,7 +211,6 @@ if (estar == "descendo") {
         image_speed = 0;   // congela a animação
         hspeed = 0;        // trava movimento horizontal
         vspeed = 0;        // trava movimento vertical
-        // ou a variável de movimento que você estiver usando
     }
 
 } else {
