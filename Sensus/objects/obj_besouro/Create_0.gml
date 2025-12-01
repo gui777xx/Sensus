@@ -16,7 +16,7 @@ distancia_ataque_max = 65;
 distancia_ataque     = irandom_range(distancia_ataque_min, distancia_ataque_max);
 
 // Ataque
-ataque_velocidade   = 4;
+ataque_velocidade   = 12;
 ataque_tempo        = 0;
 ataque_dir          = 0;
 frame_inicio_dash   = 9;   // espera até o frame 9
