@@ -167,6 +167,7 @@
     {"id":{"name":"Boss_alerta","path":"sprites/Boss_alerta/Boss_alerta.yy",},},
     {"id":{"name":"Boss_ataque1","path":"sprites/Boss_ataque1/Boss_ataque1.yy",},},
     {"id":{"name":"Boss_furando_terra","path":"sprites/Boss_furando_terra/Boss_furando_terra.yy",},},
+    {"id":{"name":"Boss_morrendo","path":"sprites/Boss_morrendo/Boss_morrendo.yy",},},
     {"id":{"name":"Boss_parado","path":"sprites/Boss_parado/Boss_parado.yy",},},
     {"id":{"name":"Boss_saindo_terra","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},},
     {"id":{"name":"Buraco","path":"sprites/Buraco/Buraco.yy",},},
