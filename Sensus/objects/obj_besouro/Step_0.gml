@@ -1,6 +1,4 @@
-// STEP EVENT do obj_besouro
-
-// Pós-dano: i-frames extras
+// Invulnerabilidade pós-dano
 if (invulneravel_timer > 0) {
     invulneravel_timer -= 1;
     invulneravel = true;
@@ -8,19 +6,50 @@ if (invulneravel_timer > 0) {
     invulneravel = false;
 }
 
-// --- Estado de morte ---
-
-
-
 // --- Estado de dano ---
 if (besouro_estado == "dano") {
-    // Travado e invulnerável; só aguarda animação terminar
     image_xscale = (obj_player.x > x) ? -1 : 1;
 
-    if (image_index >= image_number - 1) {
-        besouro_finalizar_dano();
+    // Knockback ativo com colisão
+    if (knockback_timer > 0) {
+        knockback_timer -= 1;
+
+        var new_x = x + lengthdir_x(knockback_vel, knockback_dir);
+        var new_y = y + lengthdir_y(knockback_vel, knockback_dir);
+
+        if (!place_meeting(new_x, new_y, obj_colisor_inimigos)
+        && !place_meeting(new_x, new_y, tiles)
+        && !place_meeting(new_x, new_y, colisivo)) {
+            x = new_x;
+            y = new_y;
+        } else {
+            // Se colidir com parede/colisor, cancela o knockback
+            knockback_timer = 0;
+            knockback_vel = 0;
+        }
+
+        // Desaceleração
+        knockback_vel *= knockback_drag;
     }
-    exit;
+
+    // Ao terminar a animação de dano, resolve vida/estado
+    if (image_index >= image_number - 1) {
+        hits_restantes -= 1;
+
+        if (hits_restantes <= 0) {
+            besouro_estado = "morrendo";
+            sprite_index = besouro_morrendo;
+            image_index = 0;
+            image_speed = 0.5;
+            invulneravel = false;
+        } else {
+            besouro_estado = "seguindo";
+            sprite_index = besouro_andando;
+            image_speed = 1;
+            // invulnerável até invulneravel_timer zerar
+        }
+    }
+    exit; // nada além acontece enquanto está em dano
 }
 
 // --- Parado ---
@@ -53,7 +82,7 @@ else if (besouro_estado == "seguindo") {
     var dist = point_distance(x, y, obj_player.x, obj_player.y);
     if (ataque_cooldown > 0) ataque_cooldown -= 1;
 
-    // Dash se estiver próximo
+    // Inicia ataque (dash) se estiver na janela
     if (dist > distancia_ataque && ataque_cooldown <= 0) {
         besouro_estado = "atacando";
         sprite_index = besouro_ataque;
@@ -73,7 +102,7 @@ else if (besouro_estado == "seguindo") {
         distancia_ataque = irandom_range(distancia_ataque_min, distancia_ataque_max);
     }
 
-    // Caso contrário, anda em direção ao player
+    // Anda em direção ao player com colisão
     else if (dist < distancia_seguir) {
         contador_passos += 1;
         if (contador_passos >= intervalo_passos) {
@@ -89,7 +118,6 @@ else if (besouro_estado == "seguindo") {
                 y = new_y;
             }
         }
-
     }
 }
 
@@ -99,10 +127,9 @@ else if (besouro_estado == "atacando") {
     ataque_tempo += 0.4;
 
     if (ataque_fase == "carregando") {
-        // Espera até o frame 9 antes de iniciar o dash
         if (image_index >= frame_inicio_dash) {
             ataque_fase = "dash";
-            ataque_velocidade = 3; // controlada
+            ataque_velocidade = 3;
         }
     }
 
@@ -110,7 +137,7 @@ else if (besouro_estado == "atacando") {
         var new_x = x + lengthdir_x(ataque_velocidade, ataque_dir);
         var new_y = y + lengthdir_y(ataque_velocidade, ataque_dir);
 
-        // Checa colisão com inimigos e tilemap
+        // Colisão do dash
         if (!place_meeting(new_x, new_y, obj_colisor_inimigos)
         && !place_meeting(new_x, new_y, tiles)
         && !place_meeting(new_x, new_y, colisivo)) {
@@ -124,13 +151,14 @@ else if (besouro_estado == "atacando") {
             ataque_fase = "";
         }
 
+        // Dano ao player se encostar
         if (place_meeting(x, y, obj_hitbox_inimigos)) {
             with (obj_player) {
                 receber_dano(other);
             }
         }
 
-        // Dash dura até o fim da animação
+        // Dash termina no fim da animação
         if (image_index >= image_number - 1) {
             besouro_estado = "seguindo";
             sprite_index = besouro_andando;
