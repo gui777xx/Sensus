@@ -1,3 +1,22 @@
+/// @description Step Event do obj_player (Completo e Corrigido)
+
+// =================================================
+// LÓGICA DE MORTE (CORRIGIDA)
+// =================================================
+if (global.Vida_jogador <= 0)
+{
+    // Cria o objeto controlador da tela de morte na camada correta
+    instance_create_layer(0, 0, "Ins_Entidades", obj_game_over);
+    
+    // Destrói o objeto do jogador
+    instance_destroy();
+    
+    // IMPORTANTE: Usa 'exit;' para garantir que o resto do código do Step não seja executado
+    exit; 
+}
+// =================================================
+
+
 // Ajustando a Profundidade
 
 // Inicializa variáveis de colisão frontal

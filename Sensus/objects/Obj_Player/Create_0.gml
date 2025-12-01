@@ -11,15 +11,19 @@ tem_chave_inglesa = false;
 Imune = false;
 Tempo_imune = 0;
 
-global.Vida_jogador = 6;
+global.Vida_jogador = 6; // Sua variável de vida principal
+
+// Adicionando uma variável local 'life' para consistência com a função receber_dano
+// Embora você use a global, é bom ter a local se a função for chamada internamente
+life = global.Vida_jogador; 
 
 atacando = false
 
 recebendo_dano = false;
 tempo_dano = 0;
 
- x_antes_da_queda = x;
- y_antes_da_queda = y
+x_antes_da_queda = x;
+y_antes_da_queda = y
 
 colide_atras  = false
 colide_cima   = false;
@@ -47,7 +51,7 @@ function receber_dano(source) {
     if (!Imune) {
         Imune = true;
         Tempo_imune = current_time + 1400; 
-        global.Vida_jogador -= 1;
+        global.Vida_jogador -= 1; // A vida é reduzida aqui
         recebendo_dano = true;
 
         sprite_index = Player_dano;
@@ -69,4 +73,3 @@ function receber_dano(source) {
         }
     }
 }
-
