@@ -9,17 +9,28 @@ contador_passos = 0;
 intervalo_passos = 5;
 
 // Distâncias
-distancia_ativacao = 40;   // quando acorda
-distancia_ataque   = 60;   // quando dá a cabeçada
+distancia_ativacao = 64;    
+distancia_ataque = 20;      
+distancia_ataque_distancia = 29; 
 
-// Ataque
-ataque_velocidade = 6;     // velocidade do dash
-ataque_tempo = 0;          // contador de frames do ataque
-ataque_dir = 0;            // direção calculada no momento do ataque
+// Ataque (dash curto e direção travada)
+ataque_velocidade = 1;      
+ataque_dir_locked = 0;      
+ataque_xscale_locked = 1;   
+ataque_tempo = 0;
+ataque_em_andamento = false;
+ataque_frame_inicio = 5;
+ataque_duracao = 1;         
 
 // Cooldown de ataque
-ataque_cooldown = 0;       // contador
-ataque_cooldown_max = 45;  // tempo de espera entre ataques (em frames)
+ataque_cooldown = 0;
+ataque_cooldown_max = 30;
+
+// Knockback ao levar hit
+knockback_speed = 2;        
+knockback_duration = 7;     
+knockback_dir = 0;          
+knockback_timer = 0;        
 
 // Controle de morte
 alpha_morte = 1;
@@ -27,3 +38,14 @@ alpha_morte = 1;
 // Tilemaps de colisão
 tiles    = layer_tilemap_get_id("Tiles_Parede_Cantos");
 colisivo = layer_tilemap_get_id("Tiles_Colisor");
+
+// Controle de vida
+escorpiao_hits = 0;
+escorpiao_hits_max = 4;
+escorpiao_invulneravel = false;
+
+// Anti-multi-hit
+dano_cooldown = 0;
+dano_cooldown_max = 8;
+
+gosma_criada = false;
