@@ -4,8 +4,8 @@ if (!inimigos_summonados && instance_number(obj_larva_pai) == 0) {
 
     // Cria os inimigos da próxima sala
     instance_create_layer(1300, 863, "Ins_Entidades", obj_larva);
-    instance_create_layer(1310, 908, "Ins_Entidades", obj_larva);
-    instance_create_layer(1364, 910, "Ins_Entidades", obj_larva);
+    instance_create_layer(1310, 908, "Ins_Entidades", obj_lesma);
+    instance_create_layer(1364, 910, "Ins_Entidades", obj_besouro);
 
     // Abre a porta
     porta_fechada = false;
