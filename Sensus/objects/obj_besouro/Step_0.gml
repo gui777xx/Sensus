@@ -102,7 +102,7 @@ else if (besouro_estado == "atacando") {
         // Espera até o frame 9 antes de iniciar o dash
         if (image_index >= frame_inicio_dash) {
             ataque_fase = "dash";
-            ataque_velocidade = 4; // controlada
+            ataque_velocidade = 2; // controlada
         }
     }
 

@@ -113,12 +113,12 @@ if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa) {
     image_index = 0;
     image_speed = 1;
 
-    var distancia = 4;
+    var distancia = 6;
     var x_slash = x + lengthdir_x(distancia, angulo);
     var y_slash = y + lengthdir_y(distancia, angulo);
 
     if (angulo >= 42 && angulo < 138) {
-        y_slash -= 4;
+        y_slash -= 2;
     }
 
     var slash = instance_create_layer(x_slash, y_slash, layer, obj_slash);

@@ -11,8 +11,8 @@ intervalo_passos = 5;
 // Distâncias
 distancia_ativacao   = 80;
 distancia_seguir     = 200; // até onde anda atrás do player
-distancia_ataque_min = 50;
-distancia_ataque_max = 65;
+distancia_ataque_min = 45;
+distancia_ataque_max = 55;
 distancia_ataque     = irandom_range(distancia_ataque_min, distancia_ataque_max);
 
 // Ataque
@@ -23,7 +23,7 @@ frame_inicio_dash   = 9;   // espera até o frame 9
 ataque_fase         = "";
 
 // Aleatoriedade do ângulo (desvio máximo em graus)
-ataque_desvio_max = 3; // diminui a aleatoriedade do ângulo
+ataque_desvio_max = 2; // diminui a aleatoriedade do ângulo
 
 // Cooldown de ataque
 ataque_cooldown     = 0;
