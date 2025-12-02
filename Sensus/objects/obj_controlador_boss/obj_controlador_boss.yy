@@ -1,23 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_boss",
+  "%Name":"obj_controlador_boss",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_boss",
+  "name":"obj_controlador_boss",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_colissor_adicional",
-    "path":"objects/obj_colissor_adicional/obj_colissor_adicional.yy",
+    "name":"obj_controlador_pai",
+    "path":"objects/obj_controlador_pai/obj_controlador_pai.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Boss_alerta",
-    "path":"sprites/Boss_alerta/Boss_alerta.yy",
+    "name":"Sprite_controlador",
+    "path":"sprites/Sprite_controlador/Sprite_controlador.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -87,6 +87,7 @@
     {"id":{"name":"obj_controlador_6","path":"objects/obj_controlador_6/obj_controlador_6.yy",},},
     {"id":{"name":"obj_controlador_7","path":"objects/obj_controlador_7/obj_controlador_7.yy",},},
     {"id":{"name":"obj_controlador_bau","path":"objects/obj_controlador_bau/obj_controlador_bau.yy",},},
+    {"id":{"name":"obj_controlador_boss","path":"objects/obj_controlador_boss/obj_controlador_boss.yy",},},
     {"id":{"name":"obj_controlador_corda","path":"objects/obj_controlador_corda/obj_controlador_corda.yy",},},
     {"id":{"name":"obj_controlador_olho","path":"objects/obj_controlador_olho/obj_controlador_olho.yy",},},
     {"id":{"name":"obj_controlador_pai","path":"objects/obj_controlador_pai/obj_controlador_pai.yy",},},
