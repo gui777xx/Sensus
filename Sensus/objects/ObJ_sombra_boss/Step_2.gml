@@ -1,5 +1,5 @@
-if instance_exists(Obj_boss)
+if instance_exists(obj_boss)
 {
-x = Obj_boss.x;
-y = Obj_boss.y;
+x = obj_boss.x;
+y = obj_boss.y;
 }

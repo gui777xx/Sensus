@@ -8,7 +8,7 @@ if (!variable_instance_exists(id, "travando_por_alerta_iniciado")) {
 }
 
 // Se o boss está em alerta, iniciamos a animação de travar apenas uma vez
-if (instance_exists(Obj_boss) && Obj_boss.alerta) {
+if (instance_exists(obj_boss) && obj_boss.alerta) {
     if (!travando_por_alerta_iniciado) {
         travando_por_alerta_iniciado = true;
         sprite_index = Player_travado;
@@ -18,7 +18,7 @@ if (instance_exists(Obj_boss) && Obj_boss.alerta) {
 
     // Enquanto estiver no sprite travado, força direção para o boss
     if (sprite_index == Player_travado && image_index < sprite_get_number(Player_travado) - 1) {
-        var boss = instance_nearest(x, y, Obj_boss);
+        var boss = instance_nearest(x, y, obj_boss);
         if (boss != noone) {
             // Se o boss está à direita do player → 1, se está à esquerda → -1
             image_xscale = (boss.x >= x) ? 1 : -1;

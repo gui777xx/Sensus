@@ -1,24 +1,25 @@
-// obj_boss - Create Event
-sprite_index = Boss_parado;   // sprite inicial
-image_speed = 0;              // parado sem animar
+// ============================================================================
+// obj_boss - CREATE EVENT
+// ============================================================================
+
+sprite_index = Boss_parado;
+image_speed = 1;
 vida_max = 25;
 vida = vida_max;
+
+// Controle de alerta
 alerta = false;
-animando_alerta = false;      // controla se está na animação de alerta
+animando_alerta = false;
 distancia_alerta = 50;
 
-// Estados
-estado = "parado";       // pode ser: "parado", "alerta", "atacando", "espera"
-ataque_atual = -1;       // qual ataque está sendo executado
-pode_atacar = true;      // controle para não spammar ataques
-
-
-
-estado = "idle";        // estados: "idle", "alerta", "atacando", "saindo", "espera"
+// Estados e ataques
+estado = "idle";
 ataque_atual = -1;
-pode_atacar = false;    // só começa a atacar depois do alerta
+pode_atacar = false;
 tempo_espera = 0;
+veneno_spawnado = false;
 
+// Posições para teleporte
 posicoes = [
     [301, 82],
     [294, 136],

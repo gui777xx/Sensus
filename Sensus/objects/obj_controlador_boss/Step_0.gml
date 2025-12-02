@@ -1,4 +1,4 @@
-if (!inimigos_summonados && instance_number(Obj_boss) == 0) {
+if (!inimigos_summonados && instance_number(obj_boss) == 0) {
     
     // Abre a porta
     porta_fechada = false;
