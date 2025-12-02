@@ -9,7 +9,7 @@ contador_passos = 0;
 intervalo_passos = 7;
 
 // Distâncias
-distancia_ativacao   = 80;
+distancia_ativacao   = 50;
 distancia_seguir     = 200;
 distancia_ataque_min = 25;
 distancia_ataque_max = 35;

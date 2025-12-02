@@ -1,15 +1,47 @@
 // =================================================
+// BLOQUEIO QUANDO BOSS ESTÁ EM ALERTA (TRAVA SÓ DURANTE A ANIMAÇÃO)
+// =================================================
+
+// Inicializa flag se ainda não existir
+if (!variable_instance_exists(id, "travando_por_alerta_iniciado")) {
+    travando_por_alerta_iniciado = false;
+}
+
+// Se o boss está em alerta, iniciamos a animação de travar apenas uma vez
+if (instance_exists(Obj_boss) && Obj_boss.alerta) {
+    if (!travando_por_alerta_iniciado) {
+        travando_por_alerta_iniciado = true;
+        sprite_index = Player_travado;
+        image_speed  = 1;  // roda a animação
+        image_index  = 0;  // começa do primeiro frame
+    }
+
+    // Enquanto estiver no sprite travado, força direção para o boss
+    if (sprite_index == Player_travado && image_index < sprite_get_number(Player_travado) - 1) {
+        var boss = instance_nearest(x, y, Obj_boss);
+        if (boss != noone) {
+            // Se o boss está à direita do player → 1, se está à esquerda → -1
+            image_xscale = (boss.x >= x) ? 1 : -1;
+        }
+
+        hspeed = 0;
+        vspeed = 0;
+        return; // sai do Step enquanto estiver animando o travado
+    }
+
+    // Quando terminar a animação, não retorna: o jogador volta ao normal
+} else {
+    // Boss saiu de alerta: reseta para permitir novo travamento em uma próxima vez
+    travando_por_alerta_iniciado = false;
+}
+
+// =================================================
 // LÓGICA DE MORTE 
 // =================================================
 if (global.Vida_jogador <= 0)
 {
-    // Cria o objeto controlador da tela de morte na camada correta
     instance_create_layer(0, 0, "Ins_Entidades", obj_game_over);
-    
-    // Destrói o objeto do jogador
     instance_destroy();
-    
-    // IMPORTANTE: Usa 'exit;' para garantir que o resto do código do Step não seja executado
     exit; 
 }
 // =================================================

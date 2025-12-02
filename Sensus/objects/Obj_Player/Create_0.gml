@@ -13,7 +13,7 @@ congelado = false;
 Imune = false;
 Tempo_imune = 0;
 
-global.Vida_jogador = 6; // Sua variável de vida principal
+global.Vida_jogador = 8; // Sua variável de vida principal
 
 // Adicionando uma variável local 'life' para consistência com a função receber_dano
 // Embora você use a global, é bom ter a local se a função for chamada internamente
