@@ -14,7 +14,7 @@ mostrar_texto_2 = encostando && !mostrar_texto_3;
 
 // Ação ao apertar E
 if (encostando && keyboard_check_pressed(ord("E"))) {
-    if (global.Vida_jogador < 6) {
+    if (global.Vida_jogador < 8) {
         global.Vida_jogador += 1;
         instance_destroy(); // coleta o meio coração
     } else {
