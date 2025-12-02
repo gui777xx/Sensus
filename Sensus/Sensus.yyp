@@ -166,6 +166,8 @@
     {"id":{"name":"besouro_parado","path":"sprites/besouro_parado/besouro_parado.yy",},},
     {"id":{"name":"Borda_labirinto","path":"sprites/Borda_labirinto/Borda_labirinto.yy",},},
     {"id":{"name":"Boss_alerta","path":"sprites/Boss_alerta/Boss_alerta.yy",},},
+    {"id":{"name":"Boss_ataque_melee_1","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},},
+    {"id":{"name":"Boss_ataque_melee","path":"sprites/Boss_ataque_melee/Boss_ataque_melee.yy",},},
     {"id":{"name":"Boss_ataque1","path":"sprites/Boss_ataque1/Boss_ataque1.yy",},},
     {"id":{"name":"Boss_furando_terra","path":"sprites/Boss_furando_terra/Boss_furando_terra.yy",},},
     {"id":{"name":"Boss_morrendo","path":"sprites/Boss_morrendo/Boss_morrendo.yy",},},
@@ -298,8 +300,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
+    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
