@@ -5,4 +5,4 @@ vida_max = 25;
 vida = vida_max;
 alerta = false;
 animando_alerta = false;      // controla se está na animação de alerta
-distancia_alerta = 55;
+distancia_alerta = 50;
