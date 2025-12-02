@@ -1,7 +1,5 @@
-/// @description Step Event do obj_player (Completo e Corrigido)
-
 // =================================================
-// LÓGICA DE MORTE (CORRIGIDA)
+// LÓGICA DE MORTE 
 // =================================================
 if (global.Vida_jogador <= 0)
 {
@@ -161,6 +159,12 @@ if (atacando) {
 
 if (!atacando) {
     image_xscale = (mouse_x < x) ? -1 : 1;
+}
+
+if (congelado) {
+    hspeed = 0;
+    vspeed = 0;
+    return; // sai do Step, não processa input
 }
 
 // Input
