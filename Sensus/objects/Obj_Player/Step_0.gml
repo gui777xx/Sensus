@@ -40,10 +40,16 @@ if (instance_exists(obj_boss) && obj_boss.alerta) {
 // =================================================
 if (global.Vida_jogador <= 0)
 {
-    instance_create_layer(0, 0, "Ins_Entidades", obj_game_over);
-    instance_destroy();
+    // Mudar para a sala de Game Over
+    room_goto(Morte);
+    
+    // O 'exit;' não é estritamente necessário aqui, mas é uma boa prática
+    // para garantir que o resto do código do Step não seja executado
     exit; 
 }
+// =================================================
+
+
 // =================================================
 
 
