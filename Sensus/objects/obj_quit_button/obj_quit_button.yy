@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_restart_button",
+  "%Name":"obj_quit_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_restart_button",
+  "name":"obj_quit_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Morte",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"reiniciar",
-    "path":"sprites/reiniciar/reiniciar.yy",
+    "name":"Sair",
+    "path":"sprites/Sair/Sair.yy",
   },
   "spriteMaskId":null,
   "visible":true,

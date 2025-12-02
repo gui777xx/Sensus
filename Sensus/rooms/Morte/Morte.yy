@@ -1,21 +1,21 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Room3",
-  "creationCodeFile":"rooms/Room3/RoomCreationCode.gml",
+  "%Name":"Morte",
+  "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
-  "instanceCreationOrder":[],
+  "instanceCreationOrder":[
+    {"name":"inst_72348B68","path":"rooms/Morte/Morte.yy",},
+  ],
   "isDnd":false,
   "layers":[
-    {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":6.0,"animationSpeedType":0,"colour":4294967295,"depth":0,"effectEnabled":false,"effectType":"_filter_screenshake","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[
-        {"name":"g_Magnitude","type":0,"value":"10",},
-        {"name":"g_ShakeSpeed","type":0,"value":"0.25",},
-        {"name":"g_NoiseTexture","type":2,"value":"_filter_screenshake_noise",},
-      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Splash_Screen_Abertura","path":"sprites/Splash_Screen_Abertura/Splash_Screen_Abertura.yy",},"stretch":false,"userdefinedAnimFPS":true,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_72348B68","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72348B68","objectId":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":352.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Room3",
+  "name":"Morte",
   "parent":{
     "name":"Cenas",
     "path":"folders/Cenas.yy",
@@ -31,10 +31,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":1080,
+    "Height":768,
     "inheritRoomSettings":false,
-    "persistent":true,
-    "Width":1920,
+    "persistent":false,
+    "Width":1366,
   },
   "sequenceId":null,
   "views":[

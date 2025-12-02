@@ -1,17 +1,18 @@
 // =================================================
-// LÓGICA DE MORTE 
+// LÓGICA DE MORTE (USANDO ROOM_GOTO)
 // =================================================
 if (global.Vida_jogador <= 0)
 {
-    // Cria o objeto controlador da tela de morte na camada correta
-    instance_create_layer(0, 0, "Ins_Entidades", obj_game_over);
+    // Mudar para a sala de Game Over
+    room_goto(Morte);
     
-    // Destrói o objeto do jogador
-    instance_destroy();
-    
-    // IMPORTANTE: Usa 'exit;' para garantir que o resto do código do Step não seja executado
+    // O 'exit;' não é estritamente necessário aqui, mas é uma boa prática
+    // para garantir que o resto do código do Step não seja executado
     exit; 
 }
+// =================================================
+
+
 // =================================================
 
 
