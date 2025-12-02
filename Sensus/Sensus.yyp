@@ -94,6 +94,7 @@
     {"id":{"name":"obj_coracao_1","path":"objects/obj_coracao_1/obj_coracao_1.yy",},},
     {"id":{"name":"obj_coracao_2","path":"objects/obj_coracao_2/obj_coracao_2.yy",},},
     {"id":{"name":"obj_coracao_3","path":"objects/obj_coracao_3/obj_coracao_3.yy",},},
+    {"id":{"name":"obj_coracao_4","path":"objects/obj_coracao_4/obj_coracao_4.yy",},},
     {"id":{"name":"obj_corda","path":"objects/obj_corda/obj_corda.yy",},},
     {"id":{"name":"obj_cristal","path":"objects/obj_cristal/obj_cristal.yy",},},
     {"id":{"name":"obj_estacas_direita","path":"objects/obj_estacas_direita/obj_estacas_direita.yy",},},
@@ -298,8 +299,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
+    {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

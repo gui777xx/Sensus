@@ -1,6 +1,6 @@
-// Este coração representa os pontos 7 e 8
+// Este coração representa os pontos 4, 5 e 6
 var hp_total = global.Vida_jogador;
-var hp_slot  = clamp(hp_total - 6, 0, 2); // 8→2, 7→1, 6→0
+var hp_slot  = clamp(hp_total - 4, 0, 2); // 6→2, 5→1, 4→0
 
 // Estado alvo (0 vazio, 1 meio, 2 cheio)
 var target_state = hp_slot;
@@ -62,3 +62,6 @@ if (sprite_index == spr_full) {
         }
     }
 }
+	
+
+
