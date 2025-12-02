@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"Boss_ataque_melee_1",
   "bboxMode":0,
-  "bbox_bottom":71,
+  "bbox_bottom":69,
   "bbox_left":4,
   "bbox_right":71,
   "bbox_top":5,
@@ -23,18 +23,6 @@
     {"$GMSpriteFrame":"v1","%Name":"349a801f-f70c-45b8-a3a4-6933c24b1801","name":"349a801f-f70c-45b8-a3a4-6933c24b1801","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"93114101-808a-4521-a937-940ebfaa4813","name":"93114101-808a-4521-a937-940ebfaa4813","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"a769d784-4206-4d4c-81a5-220270b7ebc9","name":"a769d784-4206-4d4c-81a5-220270b7ebc9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"d30c12ee-9350-4299-ab52-8ac4d70c1449","name":"d30c12ee-9350-4299-ab52-8ac4d70c1449","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"6643db4a-bcac-456b-b76b-a5df14527634","name":"6643db4a-bcac-456b-b76b-a5df14527634","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"272ab112-f7d1-417f-ad99-1ee8171446ac","name":"272ab112-f7d1-417f-ad99-1ee8171446ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"b6e2c720-d648-4990-8018-0a5b9fa61628","name":"b6e2c720-d648-4990-8018-0a5b9fa61628","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"e1193325-1e32-43d9-9853-1b25bda1a371","name":"e1193325-1e32-43d9-9853-1b25bda1a371","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"1116528a-a2a4-4278-a9e7-13c91e4f6bff","name":"1116528a-a2a4-4278-a9e7-13c91e4f6bff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"719f8773-5a04-4f34-b4b2-e4691728bf14","name":"719f8773-5a04-4f34-b4b2-e4691728bf14","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"28285c68-1667-42ae-9d37-90c94b20c087","name":"28285c68-1667-42ae-9d37-90c94b20c087","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"4e1eeaec-b07f-4384-8a0f-96301f790aa6","name":"4e1eeaec-b07f-4384-8a0f-96301f790aa6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"a58edd9d-e57a-4fba-9419-98a5854357b7","name":"a58edd9d-e57a-4fba-9419-98a5854357b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"69024436-3081-4416-b144-c17d132e295a","name":"69024436-3081-4416-b144-c17d132e295a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"dc9c0df4-3f81-4db3-ae6d-62f0ee2ae1ed","name":"dc9c0df4-3f81-4db3-ae6d-62f0ee2ae1ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -71,7 +59,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":23.0,
+    "length":11.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -81,7 +69,7 @@
     },
     "name":"Boss_ataque_melee",
     "playback":1,
-    "playbackSpeed":5.0,
+    "playbackSpeed":6.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -125,42 +113,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a769d784-4206-4d4c-81a5-220270b7ebc9","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7d65f782-b265-41d2-a67a-5caeea6ff6d9","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d30c12ee-9350-4299-ab52-8ac4d70c1449","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"92d201b5-a859-4fc0-be1b-c01e6f77251e","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6643db4a-bcac-456b-b76b-a5df14527634","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"63a498e7-f8a6-4f6a-8162-5d4a9624ba92","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"272ab112-f7d1-417f-ad99-1ee8171446ac","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2628403a-5c13-412a-92fb-1c91916c3948","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b6e2c720-d648-4990-8018-0a5b9fa61628","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6f8ca88d-bdb3-4d95-8507-98837cdef40f","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1193325-1e32-43d9-9853-1b25bda1a371","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2ee01a8d-5956-40f6-9978-2e9b099ce53f","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1116528a-a2a4-4278-a9e7-13c91e4f6bff","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"576e6ecf-c732-4eb4-bcd3-7c591fbd9d45","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"719f8773-5a04-4f34-b4b2-e4691728bf14","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"30892891-bcee-4e67-8649-39e9601e6932","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"28285c68-1667-42ae-9d37-90c94b20c087","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3205bd1c-2e36-4a52-917e-9586cd68774d","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e1eeaec-b07f-4384-8a0f-96301f790aa6","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"80ccdf6c-c524-4f75-abe1-35382eff35cc","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a58edd9d-e57a-4fba-9419-98a5854357b7","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3eb63b56-27df-4a07-b09e-fbe499e34ebd","IsCreationKey":false,"Key":20.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69024436-3081-4416-b144-c17d132e295a","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0d362c32-430a-427e-b330-cb9bca2fd57e","IsCreationKey":false,"Key":21.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc9c0df4-3f81-4db3-ae6d-62f0ee2ae1ed","path":"sprites/Boss_ataque_melee_1/Boss_ataque_melee_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1cfbeebe-12e4-430c-ae29-a1f6ca8e36f8","IsCreationKey":false,"Key":22.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
