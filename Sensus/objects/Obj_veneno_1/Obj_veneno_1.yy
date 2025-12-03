@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_veneno",
+  "%Name":"Obj_veneno_1",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_hitbox_inimigos","path":"objects/obj_hitbox_inimigos/obj_hitbox_inimigos.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_veneno",
+  "name":"Obj_veneno_1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Veneno_boss",
-    "path":"sprites/Veneno_boss/Veneno_boss.yy",
+    "name":"Veneno_boss_1",
+    "path":"sprites/Veneno_boss_1/Veneno_boss_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

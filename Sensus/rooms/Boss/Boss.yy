@@ -68,6 +68,11 @@
     {"name":"inst_3E376B6F1","path":"rooms/Boss/Boss.yy",},
     {"name":"inst_71534A33","path":"rooms/Boss/Boss.yy",},
     {"name":"inst_28BB010D","path":"rooms/Boss/Boss.yy",},
+    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_7869540A","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

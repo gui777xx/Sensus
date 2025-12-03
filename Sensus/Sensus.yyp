@@ -155,6 +155,7 @@
     {"id":{"name":"obj_tocha_2","path":"objects/obj_tocha_2/obj_tocha_2.yy",},},
     {"id":{"name":"obj_tocha","path":"objects/obj_tocha/obj_tocha.yy",},},
     {"id":{"name":"obj_true_buraco","path":"objects/obj_true_buraco/obj_true_buraco.yy",},},
+    {"id":{"name":"Obj_veneno_1","path":"objects/Obj_veneno_1/Obj_veneno_1.yy",},},
     {"id":{"name":"Obj_veneno","path":"objects/Obj_veneno/Obj_veneno.yy",},},
     {"id":{"name":"Object86","path":"objects/Object86/Object86.yy",},},
     {"id":{"name":"vergonha_da_profision","path":"objects/vergonha_da_profision/vergonha_da_profision.yy",},},
@@ -344,8 +345,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
     {"roomId":{"name":"Boss","path":"rooms/Boss/Boss.yy",},},
+    {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
     {"roomId":{"name":"Splash_screen","path":"rooms/Splash_screen/Splash_screen.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Morte","path":"rooms/Morte/Morte.yy",},},

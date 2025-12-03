@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Sprite_texto_4",
+    "%Name":"Sprite_texto_6",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Sprite_texto_4",
+    "name":"Sprite_texto_6",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
