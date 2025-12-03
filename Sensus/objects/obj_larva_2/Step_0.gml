@@ -1,39 +1,36 @@
-// Dormindo
-if (larva_estado == "dormindo") {
-    var dist = point_distance(x, y, obj_player.x, obj_player.y);
-    if (dist < distancia_ativacao) {
-        larva_estado = "acordando";
-        sprite_index = Larva_acordando;
-        image_index = 0;
-
-        // Ativa alerta global
-        global.larvas_alerta = true;
-    }
-}
-
-// Se qualquer larva estiver em alerta, todas acordam
-if (global.larvas_alerta && larva_estado == "dormindo") {
-    larva_estado = "acordando";
-    sprite_index = Larva_acordando;
+// --- Checa se foi atingida pelo slash ---
+if (place_meeting(x, y, obj_slash)) {
+    larva_estado = "morrendo";
+    sprite_index = Larva_morrendo_2;
     image_index = 0;
+    image_speed = 0.5; // velocidade da animação de morte
 }
 
-// Acordando
-else if (larva_estado == "acordando") {
-    // Virar para o jogador
-    if (obj_player.x > x) {
-        image_xscale = -1;
-    } else {
-        image_xscale = 1;
-    }
+// --- Estado Morrendo ---
+if (larva_estado == "morrendo") {
+    if (image_index >= image_number - 1) {
+        image_speed = 0;
+        alpha_morte -= 0.05;
+        image_alpha = alpha_morte;
 
+        if (alpha_morte <= 0.05) {
+            instance_destroy(); // remove a larva
+        }
+    }
+}
+
+// --- Estado Surgindo ---
+else if (larva_estado == "surgindo") {
+    // Quando terminar a animação de surgimento, passa direto para seguir
     if (image_index >= image_number - 1) {
         larva_estado = "seguindo";
-        sprite_index = Larva_andando;
+        sprite_index = Larva_andando_2;
+        image_index = 0;
+        image_speed = 0.5;
     }
 }
 
-// Seguindo
+// --- Estado Seguindo ---
 else if (larva_estado == "seguindo") {
     // Virar para o jogador
     if (obj_player.x > x) {
@@ -54,13 +51,13 @@ else if (larva_estado == "seguindo") {
         var new_y = y + lengthdir_y(velocidade, dir);
 
         // Verifica colisão com tiles ou objetos colisor
-        if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+        if (!place_meeting(new_x, new_y, obj_colisor_inimigos) 
+        && !place_meeting(new_x, new_y, tiles) 
+        && !place_meeting(new_x, new_y, colisivo)) {
             x = new_x;
             y = new_y;
         } else {
             // Se tem colisão, tenta desviar
-
-            // Tenta ângulos alternativos para desviar: 30°, -30°, 60°, -60°, 90°, -90°
             var desvio_angulo;
             var tentou_andar = false;
             var angulos_desvio = [30, -30, 60, -60, 90, -90];
@@ -69,7 +66,10 @@ else if (larva_estado == "seguindo") {
                 desvio_angulo = dir + angulos_desvio[i];
                 new_x = x + lengthdir_x(velocidade, desvio_angulo);
                 new_y = y + lengthdir_y(velocidade, desvio_angulo);
-                if (!place_meeting(new_x, new_y, obj_colisor_inimigos) && !place_meeting(new_x, new_y, tiles) && !place_meeting(new_x, new_y, colisivo)) {
+
+                if (!place_meeting(new_x, new_y, obj_colisor_inimigos) 
+                && !place_meeting(new_x, new_y, tiles) 
+                && !place_meeting(new_x, new_y, colisivo)) {
                     x = new_x;
                     y = new_y;
                     tentou_andar = true;
@@ -77,16 +77,16 @@ else if (larva_estado == "seguindo") {
                 }
             }
 
-            // Se não conseguiu desviar, não anda
+            // Se não conseguiu desviar, fica parado
             if (!tentou_andar) {
-                // opcional: fica parado ou tenta outra lógica
+                // opcional: lógica extra
             }
         }
 
         // Se colidiu com o jogador, causa dano
         if (place_meeting(x, y, obj_hitbox_inimigos)) {
             with (obj_player) {
-                receber_dano(other); 
+                receber_dano(other);
             }
         }
     }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sumonar_larva",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sumonar_larva",
+  "parent":{
+    "name":"Boss",
+    "path":"folders/Sprites/Inimigos/Boss.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

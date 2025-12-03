@@ -343,11 +343,6 @@
     {"name":"inst_328FA7D8","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_6E26847E","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_2CA1C75A_1","path":"rooms/Room_2/Room_2.yy",},
-    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_7869540A","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

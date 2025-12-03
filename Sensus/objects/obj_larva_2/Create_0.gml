@@ -1,11 +1,19 @@
-larva_estado = "dormindo";
+// Estado inicial
+larva_estado = "surgindo";
 global.larvas_alerta = false;
-sprite_index = Larva_enrrolada;
+
+// Sprite inicial de surgimento
+sprite_index = Larva_surgindo_2;
+image_index = 0;
+image_speed = 0.5; // velocidade da animação de surgimento
+
+// Configurações gerais
 velocidade = 1;
-distancia_ativacao = 40;
+distancia_ativacao = 40; // não será usado, mas mantido por compatibilidade
 contador_passos = 0;
-intervalo_passos = 5;
+intervalo_passos = 7;
 alpha_morte = 1; // controle de transparência
 
- tiles     = layer_tilemap_get_id("Tiles_Parede_Cantos");
- colisivo = layer_tilemap_get_id("Tiles_Colisor");
+// Tiles de colisão
+tiles     = layer_tilemap_get_id("Tiles_Parede_Cantos");
+colisivo  = layer_tilemap_get_id("Tiles_Colisor");

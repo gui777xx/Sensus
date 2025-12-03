@@ -1,17 +1,17 @@
 // ============================================================================
-// obj_boss - ALARM 1 EVENT (SINTAXE CORRIGIDA)
+// obj_boss - ALARM 1 EVENT (FINAL CONSOLIDADO COM NOVO ATAQUE)
 // ============================================================================
 
 // O cooldown terminou. Volta para o estado de ataque.
 estado = "atacando";
 
 // === LÓGICA DE INÍCIO DE ATAQUE DIRETA (COM PREVENÇÃO DE 3 REPETIÇÕES) ===
-var new_attack; // <--- CORREÇÃO: Declaração com 'var'
+var new_attack; 
 var must_change = (repeat_count >= 1); 
 
-do { // <--- CORREÇÃO: Usando 'do'
-    new_attack = irandom(2); // Sorteia entre 0, 1 e 2
-} until (!must_change || (new_attack != last_attack)); // <--- CORREÇÃO: Usando 'until'
+do { 
+    new_attack = irandom(3); // <--- MUDANÇA AQUI: Sorteia entre 0, 1, 2 e 3
+} until (!must_change || (new_attack != last_attack)); 
 
 // Atualiza as variáveis de controle
 if (new_attack == last_attack) {
@@ -41,5 +41,15 @@ if (ataque_atual == 0) {
     sprite_index = Boss_ataque_melee_1;
     image_index = 0;
     image_speed = 1;
+    
+} else if (ataque_atual == 3) { // <--- NOVO ATAQUE: Larvas
+    // Ataque 3: Larvas
+    sprite_index = Boss_alerta; // <--- CORREÇÃO: Usa o sprite de alerta
+    image_index = 0;
+    image_speed = 1;
+    
+    // Ativa o alarme para invocar as larvas após o alerta
+    var duracao_alerta = sprite_get_number(Boss_alerta) / image_speed;
+    alarm_set(3, duracao_alerta); 
 }
 // =========================================

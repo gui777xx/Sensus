@@ -2,7 +2,7 @@ if place_meeting(x, y, obj_slash)
 
 {
     larva_estado = "morrendo";
-    sprite_index = Larva_morrendo;
+    sprite_index = Larva_morrendo_2;
     image_index = 0;
     image_speed = 0.5; // velocidade da animação de morte
 }
