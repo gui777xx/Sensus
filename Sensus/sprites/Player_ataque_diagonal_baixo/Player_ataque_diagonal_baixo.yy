@@ -75,7 +75,7 @@
     },
     "name":"Player_ataque_diagonal_baixo",
     "playback":1,
-    "playbackSpeed":24.0,
+    "playbackSpeed":23.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
