@@ -227,7 +227,7 @@ if (estar == "descendo") {
         vspeed = 0;
 
         // TELEPORTA PARA ROOM_BOSS
-        room_goto(Boss);
+         room_goto_next();
     }
 
 } else {
