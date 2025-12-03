@@ -32,7 +32,7 @@
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d5557df6-6295-491f-bc05-d01d97726e81","blendMode":1,"displayName":"Layer 1","isLocked":false,"name":"d5557df6-6295-491f-bc05-d01d97726e81","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d5557df6-6295-491f-bc05-d01d97726e81","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"d5557df6-6295-491f-bc05-d01d97726e81","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"54932924-cd7e-4649-bd90-3c097a03ebc9","blendMode":0,"displayName":"default","isLocked":false,"name":"54932924-cd7e-4649-bd90-3c097a03ebc9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Splash_Screen_Abertura",

@@ -1,1 +1,0 @@
-draw_sprite_stretched(Splash_Screen_Abertura, 0, 0, 0, room_width, room_height);

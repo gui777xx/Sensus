@@ -311,6 +311,8 @@
     {"id":{"name":"Sprite_texto_4","path":"sprites/Sprite_texto_4/Sprite_texto_4.yy",},},
     {"id":{"name":"Sprite_texto_5","path":"sprites/Sprite_texto_5/Sprite_texto_5.yy",},},
     {"id":{"name":"Sprite_texto","path":"sprites/Sprite_texto/Sprite_texto.yy",},},
+    {"id":{"name":"Sprite158","path":"sprites/Sprite158/Sprite158.yy",},},
+    {"id":{"name":"Sprite159","path":"sprites/Sprite159/Sprite159.yy",},},
     {"id":{"name":"Terra_afins_labirinto","path":"sprites/Terra_afins_labirinto/Terra_afins_labirinto.yy",},},
     {"id":{"name":"Teste_cenario_1","path":"sprites/Teste_cenario_1/Teste_cenario_1.yy",},},
     {"id":{"name":"Tocha_parede_2","path":"sprites/Tocha_parede_2/Tocha_parede_2.yy",},},
