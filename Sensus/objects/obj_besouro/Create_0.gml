@@ -6,7 +6,7 @@ sprite_index = besouro_parado;
 // Movimento
 velocidade = 2;
 contador_passos = 0;
-intervalo_passos = 7;
+intervalo_passos = 8;
 
 // Distâncias
 distancia_ativacao   = 50;
