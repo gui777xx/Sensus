@@ -239,6 +239,7 @@
     {"id":{"name":"escorpiao_dano_frente","path":"sprites/escorpiao_dano_frente/escorpiao_dano_frente.yy",},},
     {"id":{"name":"escorpiao_morrendo","path":"sprites/escorpiao_morrendo/escorpiao_morrendo.yy",},},
     {"id":{"name":"escorpiao_parado","path":"sprites/escorpiao_parado/escorpiao_parado.yy",},},
+    {"id":{"name":"espada","path":"sprites/espada/espada.yy",},},
     {"id":{"name":"Estacas_direita","path":"sprites/Estacas_direita/Estacas_direita.yy",},},
     {"id":{"name":"Estacas_esquerda","path":"sprites/Estacas_esquerda/Estacas_esquerda.yy",},},
     {"id":{"name":"Estacas_frente","path":"sprites/Estacas_frente/Estacas_frente.yy",},},
