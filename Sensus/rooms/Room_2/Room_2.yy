@@ -334,11 +334,6 @@
     {"name":"inst_18525583","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_5086A18B","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_778DB1E9","path":"rooms/Room_2/Room_2.yy",},
-    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_7869540A","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_76C579C0","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_4FA29E8B","path":"rooms/Room_2/Room_2.yy",},
     {"name":"inst_4260A126","path":"rooms/Room_2/Room_2.yy",},
@@ -428,7 +423,7 @@
           1,3,-14,-2147483648,-2,3,-150,-2147483648,-2,3,-12,-2147483648,-2,3,-151,-2147483648,-2,3,-9,-2147483648,
           -4,3,-152,-2147483648,-12,3,-4526,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Tile_Colisor","path":"tilesets/Tile_Colisor/Tile_Colisor.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_Cima","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cima","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":134,"SerialiseWidth":167,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tiles_Cima","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cima","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":134,"SerialiseWidth":167,"TileCompressedData":[
           -88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,
           -88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,
           -88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,-88,0,-79,-2147483648,

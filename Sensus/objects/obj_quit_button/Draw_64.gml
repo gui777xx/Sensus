@@ -14,7 +14,6 @@ draw_rectangle(x - button_width / 2, y - button_height / 2,
 // Texto
 draw_set_color(c_white);
 draw_set_font(fnt_botao);
-draw_text(x, y, button_text);
 
 // Reset
 draw_set_font(-1);
