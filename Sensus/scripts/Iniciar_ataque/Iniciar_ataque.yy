@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Iniciar_ataque",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Iniciar_ataque",
+  "parent":{
+    "name":"Boss",
+    "path":"folders/Sprites/Inimigos/Boss.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"boss_morrer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"boss_morrer",
+  "parent":{
+    "name":"Boss",
+    "path":"folders/Sprites/Inimigos/Boss.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

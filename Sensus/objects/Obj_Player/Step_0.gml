@@ -7,55 +7,41 @@ if (!variable_instance_exists(id, "travando_por_alerta_iniciado")) {
     travando_por_alerta_iniciado = false;
 }
 
-// Se o boss está em alerta, iniciamos a animação de travar apenas uma vez
 if (instance_exists(obj_boss) && obj_boss.alerta) {
     if (!travando_por_alerta_iniciado) {
         travando_por_alerta_iniciado = true;
         sprite_index = Player_travado;
-        image_speed  = 1;  // roda a animação
-        image_index  = 0;  // começa do primeiro frame
+        image_speed  = 1;
+        image_index  = 0;
     }
 
-    // Enquanto estiver no sprite travado, força direção para o boss
     if (sprite_index == Player_travado && image_index < sprite_get_number(Player_travado) - 1) {
         var boss = instance_nearest(x, y, obj_boss);
         if (boss != noone) {
-            // Se o boss está à direita do player → 1, se está à esquerda → -1
             image_xscale = (boss.x >= x) ? 1 : -1;
         }
-
         hspeed = 0;
         vspeed = 0;
-        return; // sai do Step enquanto estiver animando o travado
+        return;
     }
-
-    // Quando terminar a animação, não retorna: o jogador volta ao normal
 } else {
-    // Boss saiu de alerta: reseta para permitir novo travamento em uma próxima vez
     travando_por_alerta_iniciado = false;
 }
 
 // =================================================
 // LÓGICA DE MORTE 
 // =================================================
-if (global.Vida_jogador <= 0)
-{
-    // Mudar para a sala de Game Over
+if (global.Vida_jogador <= 0) {
     room_goto(Morte);
-    
-    // O 'exit;' não é estritamente necessário aqui, mas é uma boa prática
-    // para garantir que o resto do código do Step não seja executado
-    exit; 
+    exit;
 }
 // =================================================
 
 
 // =================================================
-
-
 // Ajustando a Profundidade
+// =================================================
 
-// Inicializa variáveis de colisão frontal
 if (!variable_instance_exists(id, "colide_cima")) {
     colide_cima   = false;
     colide_baixo  = false;
@@ -64,34 +50,29 @@ if (!variable_instance_exists(id, "colide_cima")) {
     objeto_colidido_frente = noone;
 }
 
-// Salva posição segura fora do buraco
 if (!caindo_no_buraco && !esta_em_buraco()) {
     x_antes_da_queda = x;
     y_antes_da_queda = y;
 }
 
-// Controle de queda 
 if (caindo_no_buraco) {
     atacando = false;
     if (image_index >= sprite_get_number(Player_caindo) - 1 || current_time >= tempo_caindo) {
         caindo_no_buraco = false;
         receber_dano(noone);
-
         var delta_x = x_antes_da_queda - x;
         var ajuste = 3;
-
         if (abs(delta_x) > 0) {
             x = x_antes_da_queda + sign(delta_x) * ajuste;
         } else {
             x = x_antes_da_queda;
         }
-
         y = y_antes_da_queda;
     }
     return;
 }
 
-// Controle de knockback
+// Knockback
 if (knockback_timer > 0) {
     var next_x = x + knockback_dx;
     var next_y = y + knockback_dy;
@@ -110,28 +91,26 @@ if (knockback_timer > 0) {
     return;
 }
 
+// Interação com baú
 if (keyboard_check_pressed(ord("E"))) {
     var controlador = instance_place(x, y, obj_controlador_bau);
-
     if (controlador != noone) {
         var bau = instance_nearest(controlador.x, controlador.y, obj_bau);
-
         if (bau != noone && !bau.aberto) {
             bau.abrir();
         }
-
         with (controlador) {
             instance_destroy();
         }
     }
 }
 
-// Imunidade temporária
+// Imunidade
 if (Imune && current_time >= Tempo_imune) {
     Imune = false;
 }
 
-// Controle de dano
+// Dano
 if (recebendo_dano) {
     atacando = false;
     if (image_index >= sprite_get_number(Player_dano) - 1 || current_time >= tempo_dano) {
@@ -145,14 +124,10 @@ if (recebendo_dano) {
 // ----------------------
 // Controle de ataque
 // ----------------------
-// >>> BLOQUEIO EXTRA: não atacar se estiver descendo <<<
 if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa && estar != "descendo") {
-
     atacando = true;
-
     var angulo = point_direction(x, y, mouse_x, mouse_y);
     var ataque_sprite;
-
     if (angulo >= 72 && angulo < 108) {
         ataque_sprite = Player_ataque_cima;
     } else if ((angulo >= 36 && angulo < 72) || (angulo >= 108 && angulo < 144)) {
@@ -166,19 +141,15 @@ if (mouse_check_button_pressed(mb_left) && !atacando && tem_chave_inglesa && est
     } else {
         ataque_sprite = Player_ataque_frente;
     }
-
     sprite_index = ataque_sprite;
     image_index = 0;
     image_speed = 1;
-
     var distancia = 6;
     var x_slash = x + lengthdir_x(distancia, angulo);
     var y_slash = y + lengthdir_y(distancia, angulo);
-
     if (angulo >= 42 && angulo < 138) {
         y_slash -= 2;
     }
-
     var slash = instance_create_layer(x_slash, y_slash, layer, obj_slash);
     slash.image_angle = angulo;
     slash.player_x = x;
@@ -202,10 +173,12 @@ if (!atacando) {
 if (congelado) {
     hspeed = 0;
     vspeed = 0;
-    return; // sai do Step, não processa input
+    return;
 }
 
+// ----------------------
 // Input
+// ----------------------
 var cima      = keyboard_check(vk_up)    || keyboard_check(ord("W"));
 var baixo     = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 var esquerda  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
@@ -217,7 +190,6 @@ if (colide_frente) {
     if (image_xscale == 1) direita = false;
     else esquerda = false;
 }
-
 if (colide_atras) {
     if (image_xscale == -1) direita = false;
     else esquerda = false;
@@ -246,13 +218,16 @@ var se_moveu = (x != x_ant) || (y != y_ant);
 if (estar == "descendo") {
     sprite_index = Player_descendo;
     image_speed  = 1;
-    image_xscale = 1; // força sempre virado 
+    image_xscale = 1;
 
-    // Verifica se chegou no último frame
+    // Verifica se chegou no último frame da animação
     if (image_index >= image_number - 1) {
-        image_speed = 0;   // congela a animação
-        hspeed = 0;        // trava movimento horizontal
-        vspeed = 0;        // trava movimento vertical
+        image_speed = 0;
+        hspeed = 0;
+        vspeed = 0;
+
+        // TELEPORTA PARA ROOM_BOSS
+        room_goto(Boss);
     }
 
 } else {
