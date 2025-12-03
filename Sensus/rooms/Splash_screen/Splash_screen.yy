@@ -6,11 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_226226BF","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_69263155","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_13394EE4","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_65EC4FF5","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_7869540A","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_47833996","path":"rooms/Splash_screen/Splash_screen.yy",},
     {"name":"inst_481FBE75","path":"rooms/Splash_screen/Splash_screen.yy",},
   ],

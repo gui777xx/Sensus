@@ -13,6 +13,15 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"dd7f484e-a262-495c-8254-5d492ca44d7c","name":"dd7f484e-a262-495c-8254-5d492ca44d7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c9db3ce6-4534-4643-b71f-833d9f9e9fbe","name":"c9db3ce6-4534-4643-b71f-833d9f9e9fbe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"13034475-726c-4cb4-88f6-9389a9eca346","name":"13034475-726c-4cb4-88f6-9389a9eca346","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"883420e1-aa21-4471-a051-953a5a151062","name":"883420e1-aa21-4471-a051-953a5a151062","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"66b06748-39dc-4978-8e3c-a7e71fde3065","name":"66b06748-39dc-4978-8e3c-a7e71fde3065","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"48b95c75-314b-46aa-937e-dcd6f61923a9","name":"48b95c75-314b-46aa-937e-dcd6f61923a9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"214ae702-2c56-404b-a86a-ef6605d4b866","name":"214ae702-2c56-404b-a86a-ef6605d4b866","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"85db3bed-db90-464a-b2ab-af2dfbd993a9","name":"85db3bed-db90-464a-b2ab-af2dfbd993a9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"02ef9f04-7253-49eb-9ae3-0ef1762ef26a","name":"02ef9f04-7253-49eb-9ae3-0ef1762ef26a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b778a08e-3e48-48d0-87d4-7ac7459f4fa7","name":"b778a08e-3e48-48d0-87d4-7ac7459f4fa7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"782802e7-86aa-4ae5-8796-5b7caa345802","name":"782802e7-86aa-4ae5-8796-5b7caa345802","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"8db64718-ab21-4c13-ac93-dcd286292af0","name":"8db64718-ab21-4c13-ac93-dcd286292af0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"bcd7b1a5-4258-4308-8b8c-e116a9da439a","name":"bcd7b1a5-4258-4308-8b8c-e116a9da439a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -59,7 +68,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":11.0,
+    "length":20.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,7 +78,7 @@
     },
     "name":"Boss_saindo_terra",
     "playback":1,
-    "playbackSpeed":5.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -84,35 +93,62 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dd7f484e-a262-495c-8254-5d492ca44d7c","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9a47fe5d-a307-4962-8c20-e4a40e9f8f87","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9db3ce6-4534-4643-b71f-833d9f9e9fbe","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ac07c85f-3c88-46fa-a882-a94f9128a9e0","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13034475-726c-4cb4-88f6-9389a9eca346","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"45b690ff-76aa-4354-a6e8-fae339aa8c79","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"883420e1-aa21-4471-a051-953a5a151062","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2377935b-142e-419b-ad23-4d9be807bed9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66b06748-39dc-4978-8e3c-a7e71fde3065","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d12561ef-6605-44e4-a663-2d795a2a4ff5","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"48b95c75-314b-46aa-937e-dcd6f61923a9","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dd36db21-5ef1-4eaf-80cf-3e72a263db97","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"214ae702-2c56-404b-a86a-ef6605d4b866","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c46afb05-4a58-4f19-acf1-850688e34fa9","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"85db3bed-db90-464a-b2ab-af2dfbd993a9","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"19c38aae-d682-4fe3-892b-d625caa6ae28","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"02ef9f04-7253-49eb-9ae3-0ef1762ef26a","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e6cfc9d3-0047-4562-b491-4fe521212557","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b778a08e-3e48-48d0-87d4-7ac7459f4fa7","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8f6bf00e-4a3d-459e-9415-4051f668f15c","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"782802e7-86aa-4ae5-8796-5b7caa345802","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4f1d4e72-2d1e-4169-82af-c8b336b8d52d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"4f1d4e72-2d1e-4169-82af-c8b336b8d52d","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8db64718-ab21-4c13-ac93-dcd286292af0","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3c94c9f2-a24b-4356-bbe5-237bd2765ede","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"3c94c9f2-a24b-4356-bbe5-237bd2765ede","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bcd7b1a5-4258-4308-8b8c-e116a9da439a","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b968d287-d08b-4b78-b5bd-f97e6dc0827a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"b968d287-d08b-4b78-b5bd-f97e6dc0827a","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"52a32fb8-a927-4055-8a51-ef5e55b576e4","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f664c7b6-79e0-436a-b60b-b7e74d09a96d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"f664c7b6-79e0-436a-b60b-b7e74d09a96d","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c04784a-b9db-48bc-9d81-14e1a6dbaab7","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b3b1f800-b3f7-472f-97c2-5a763106d255","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"b3b1f800-b3f7-472f-97c2-5a763106d255","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b3386d88-8162-49e8-b86a-7ddaf43b9bf7","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"55f3f87c-4495-4618-beda-942f844baef5","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"55f3f87c-4495-4618-beda-942f844baef5","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2712f75d-4bf4-4904-bf71-de03054b8e50","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ebb1ff3a-596b-49cf-9b6a-a7c14f47b16f","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"ebb1ff3a-596b-49cf-9b6a-a7c14f47b16f","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e75f87d4-5c3b-4c4e-8ab5-25d853c2d461","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"954c6193-449e-4867-a32d-d15c3bfa6696","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"954c6193-449e-4867-a32d-d15c3bfa6696","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5391041f-fae8-482d-bbeb-f23e25658d1b","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"96b86b0e-465e-41ac-91f9-54645fb78cac","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"96b86b0e-465e-41ac-91f9-54645fb78cac","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"393d96d8-63b5-4ad4-96ae-16d3b7469dbd","path":"sprites/Boss_saindo_terra/Boss_saindo_terra.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"20b8e74c-6018-49ec-a426-92934a1f3f0b","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"20b8e74c-6018-49ec-a426-92934a1f3f0b","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

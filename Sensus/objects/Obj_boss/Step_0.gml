@@ -1,116 +1,58 @@
 // ============================================================================
-// obj_boss - STEP EVENT
+// obj_boss - STEP EVENT (FINAL CONSOLIDADO)
 // ============================================================================
 
-// DEBUG - remova depois
-draw_text(10, 10, "Estado: " + estado);
-draw_text(10, 30, "Pode atacar: " + string(pode_atacar));
-draw_text(10, 50, "Ataque atual: " + string(ataque_atual));
-
-
-
-var dist = point_distance(x, y, obj_player.x, obj_player.y);
-
-// -------------------- ALERTA --------------------
-if (dist < distancia_alerta && !alerta && !animando_alerta) {
-    alerta = true;
-    animando_alerta = true;
-    sprite_index = Boss_alerta;
-    image_index = 0;
-    image_speed = 1;
-    
-    obj_player.congelado = true;
-}
+// -------------------- GERENCIAMENTO DE ANIMAÇÃO DE ALERTA --------------------
+// A ativação do alerta é feita pelo Obj_controlador_porta_boss.
+// Este bloco apenas gerencia a animação de alerta.
 
 if (animando_alerta) {
     if (image_index >= sprite_get_number(sprite_index) - 1) {
         animando_alerta = false;
-        image_speed = 1;
-        
         obj_player.congelado = false;
         
-        // Pronto para atacar
-        sprite_index = Boss_parado;
-        estado = "idle";
-        pode_atacar = true;
-    }
+        // Transição imediata para o ataque após o alerta
+        estado = "atacando";
+        sprite_index = Boss_parado; // Volta para o sprite parado
+        
+        // === LÓGICA DE INÍCIO DE ATAQUE DIRETA (COM PREVENÇÃO DE 3 REPETIÇÕES) ===
+
+var new_attack; // <--- CORREÇÃO: Declaração com 'var'
+var must_change = (repeat_count >= 1); 
+
+do { // <--- CORREÇÃO: Usando 'do'
+    new_attack = irandom(2); // Sorteia entre 0, 1 e 2
+} until (!must_change || (new_attack != last_attack)); // <--- CORREÇÃO: Usando 'until'
+
+// Atualiza as variáveis de controle
+if (new_attack == last_attack) {
+    repeat_count += 1; // Repetiu
+} else {
+    repeat_count = 0; // Ataque diferente, reseta a contagem
 }
 
-// -------------------- ESCOLHA DE ATAQUE --------------------
-if (estado == "idle" && pode_atacar) {
-    ataque_atual = irandom(1); // 0 = perfurar terra, 1 = ataque veneno
-    pode_atacar = false; // IMPORTANTE: desabilita imediatamente para não repetir
+ataque_atual = new_attack;
+last_attack = new_attack; // ATUALIZA O ÚLTIMO ATAQUE
+
+if (ataque_atual == 0) {
+    // Ataque 0: Teleporte (Furando Terra)
+    sprite_index = Boss_furando_terra;
+    image_index = 0;
+    image_speed = 1;
     
-    if (ataque_atual == 0) {
-        // Ataque 1: furando terra
-        estado = "atacando";
-        sprite_index = Boss_furando_terra;
-        image_index = 0;
-        image_speed = 1;
-    } else if (ataque_atual == 1) {
-        // Ataque 2: animação + veneno
-        estado = "atacando";
-        sprite_index = Boss_ataque1;
-        image_index = 0;
-        image_speed = 1;
-        veneno_spawnado = false;
-    }
+} else if (ataque_atual == 1) {
+    // Ataque 1: Veneno
+    sprite_index = Boss_ataque1;
+    image_index = 0;
+    image_speed = 1;
+    veneno_spawnado = false; 
+    
+} else if (ataque_atual == 2) { 
+    // Ataque 2: Melee
+    sprite_index = Boss_ataque_melee_1;
+    image_index = 0;
+    image_speed = 1;
 }
-
-// -------------------- ATAQUE 1: FURANDO TERRA --------------------
-if (estado == "atacando" && ataque_atual == 0) {
-    if (image_index >= sprite_get_number(sprite_index) - 1) {
-        // Terminou de furar terra → fica parado no último frame
-        image_speed = 0;
-        
-        // Escolhe posição aleatória
-        var pos = posicoes[irandom(array_length(posicoes) - 1)];
-        x = pos[0];
-        y = pos[1];
-        
-        // Troca para sprite saindo da terra
-        sprite_index = Boss_saindo_terra;
-        image_index = 0;
-        image_speed = 1;
-        
-        estado = "saindo";
-    }
+// =========================================
 }
-
-// -------------------- SAINDO DA TERRA --------------------
-if (estado == "saindo") {
-    if (image_index >= sprite_get_number(sprite_index) - 1) {
-        sprite_index = Boss_parado;
-        image_speed = 1;
-        estado = "espera";
-        
-        tempo_espera = room_speed * 2; // 2s de cooldown
-    }
-}
-
-// -------------------- ATAQUE 2: ANIMAÇÃO + VENENO --------------------
-if (estado == "atacando" && ataque_atual == 1) {
-    // Quando chegar no último frame do Boss_ataque1, spawna o veneno
-    if (!veneno_spawnado && image_index >= sprite_get_number(sprite_index) - 1) {
-        veneno_spawnado = true;
-        
-        // Instancia o veneno na posição do boss
-        var v = instance_create_layer(x, y, layer, Obj_veneno);
-        
-        // Entra direto em espera (acabou a animação de ataque)
-        sprite_index = Boss_parado;
-        image_speed = 1;
-        estado = "espera";
-        
-        tempo_espera = room_speed * 1.5; // 1.5s de cooldown
-    }
-}
-
-// -------------------- ESPERA ENTRE ATAQUES --------------------
-if (estado == "espera") {
-    tempo_espera -= 1;
-    if (tempo_espera <= 0) {
-        estado = "idle";
-        pode_atacar = true;
-    }
 }
